@@ -8,10 +8,11 @@
 <meta name="format-detection" content="telephone=yes">
 <title>Bommarillu Home Stay — Rajamahendravaram</title>
 <meta name="description" content="Bommarillu Home Stay, a service apartment in Prakasam Nagar, Rajamahendravaram. Rated 4.5 on Google. Call or WhatsApp +91 88858 33778.">
+<link rel="canonical" href="https://bommarilluhomestay.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bommarillu Home Stay — Rajamahendravaram">
 <meta property="og:description" content="Service apartment in Prakasam Nagar, Rajamahendravaram. Rated 4.5 on Google. Call or WhatsApp to book.">
-<meta property="og:url" content="https://akhil8790.github.io/BOMMARILLU-HOME-STAY/">
+<meta property="og:url" content="https://bommarilluhomestay.github.io/">
 <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B1614'/%3E%3Cpath d='M14 30 32 15l18 15v19a2 2 0 0 1-2 2H38V38H26v13H16a2 2 0 0 1-2-2z' fill='%23E0A45A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin>
@@ -20,12 +21,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js');</script>
+<script>
+(function(){
+  var ICONS = {
+    call: '<svg viewBox="0 0 24 24" class="ai-call"><path class="wave w1" d="M14.6 6.3a3.9 3.9 0 0 1 3.2 3.2"/><path class="wave w2" d="M14.7 2.7a7.4 7.4 0 0 1 6.7 6.7"/><g class="hand"><path class="f" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/></g></svg>',
+    pin: '<svg viewBox="0 0 24 26" class="ai-pin"><ellipse class="ripple" cx="12" cy="23.4" rx="3.2" ry="1.05"/><ellipse class="shadow" cx="12" cy="23.4" rx="3.3" ry="1"/><g class="drop"><path class="f" d="M12 1.6c-4.4 0-7.9 3.35-7.9 7.7 0 5.5 6.5 11.7 7.3 12.4.34.3.86.3 1.2 0 .8-.7 7.3-6.9 7.3-12.4 0-4.35-3.5-7.7-7.9-7.7z"/><path class="d" d="M12 5.3 8 8.7v4.4c0 .36.3.64.65.64h2.25v-2.6h2.2v2.6h2.25c.36 0 .65-.28.65-.64V8.7z"/></g></svg>',
+    chat: '<svg viewBox="0 0 24 24" class="ai-chat"><g class="bub"><path class="f" d="M12 2.3c-5.4 0-9.7 4.05-9.7 9.2 0 1.85.56 3.55 1.52 5L2.6 21.5l5.2-1.4c1.27.63 2.7.98 4.2.98 5.4 0 9.7-4.1 9.7-9.2S17.4 2.3 12 2.3z"/><circle class="dot d1" cx="7.8" cy="11.6" r="1.5"/><circle class="dot d2" cx="12" cy="11.6" r="1.5"/><circle class="dot d3" cx="16.2" cy="11.6" r="1.5"/></g></svg>',
+    route: '<svg viewBox="0 0 24 24" class="ai-route"><path class="trail" d="M4.6 20c4.2 0 3.6-5.2 7.6-5.6 2.7-.3 4.3-.9 5.3-2.6"/><circle class="start" cx="4.6" cy="20" r="2.2"/><g class="flag"><path class="f" d="M17.6 1.6c-2.6 0-4.7 2-4.7 4.6 0 3.2 3.9 6.9 4.3 7.3.22.2.58.2.8 0 .4-.4 4.3-4.1 4.3-7.3 0-2.6-2.1-4.6-4.7-4.6z"/><circle class="d" cx="17.6" cy="6.2" r="1.7"/></g></svg>',
+    photo: '<svg viewBox="0 0 24 24" class="ai-photo"><rect class="f" x="2.4" y="4" width="19.2" height="16" rx="4.2"/><path class="d" d="M5.4 17.2l4.1-4.5c.42-.46 1.13-.46 1.55 0l2.3 2.5 1.35-1.4c.42-.43 1.1-.43 1.5.02l2.4 2.9c.3.35.05.88-.4.88H5.8c-.45 0-.68-.1-.4-.4z"/><circle class="sun" cx="15.9" cy="8.9" r="1.8"/></svg>'
+  };
+  customElements.define('bm-icon', class extends HTMLElement {
+    connectedCallback(){
+      if (this.firstChild) return;
+      this.setAttribute('aria-hidden', 'true');
+      this.innerHTML = ICONS[this.getAttribute('name')] || '';
+    }
+  });
+})();
+</script>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"LodgingBusiness",
   "name":"Bommarillu Home Stay",
-  "url":"https://akhil8790.github.io/BOMMARILLU-HOME-STAY/",
+  "url":"https://bommarilluhomestay.github.io/",
   "telephone":"+91-8885833778",
   "image":"https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
   "address":{
@@ -181,21 +200,63 @@
   }
   @keyframes halo{0%{transform:scale(1);opacity:.55;}80%,100%{transform:scale(1.75);opacity:0;}}
   .badge.wa{color:var(--wa);}
-  .ring{transform-origin:50% 50%;animation:ring 2.8s ease-in-out infinite;}
-  @keyframes ring{
-    0%,55%,100%{transform:rotate(0);}
-    60%{transform:rotate(-16deg);}64%{transform:rotate(15deg);}68%{transform:rotate(-12deg);}
-    72%{transform:rotate(10deg);}76%{transform:rotate(-5deg);}80%{transform:rotate(0);}
-  }
-  .pin{transform-origin:50% 100%;animation:pin 2.4s var(--ease) infinite;}
-  @keyframes pin{0%,100%{transform:translateY(0);}35%{transform:translateY(-5px) scaleY(1.04);}55%{transform:translateY(0) scaleY(.94);}70%{transform:translateY(0) scaleY(1);}}
-  .pin-shadow{transform-origin:50% 50%;animation:pinShadow 2.4s var(--ease) infinite;}
-  @keyframes pinShadow{0%,100%{transform:scale(1);opacity:.5;}35%{transform:scale(.6);opacity:.25;}55%{transform:scale(1.1);opacity:.55;}}
-  .bubble{transform-origin:50% 60%;animation:bubble 3s var(--ease) infinite;}
-  @keyframes bubble{0%,60%,100%{transform:scale(1);}66%{transform:scale(1.14);}72%{transform:scale(.96);}78%{transform:scale(1.04);}}
+  /* ---------- Animated icons ---------- */
+  bm-icon{display:inline-grid;place-items:center;flex:none;width:22px;height:22px;
+    --ic-brass:url(#gr-brass);--ic-coral:url(#gr-coral);--ic-green:url(#gr-green);--ic-teal:url(#gr-teal);
+    --ic-detail:#fff;--ic-line:#F6C88C;--ic-line2:#FF9A76;--ic-shadow:rgba(0,0,0,.35);--spd:1;--play:running;}
+  bm-icon svg{display:block;width:100%;height:100%;overflow:visible;}
+  bm-icon svg *{animation-play-state:var(--play) !important;}
+
+  .ai-call .f{fill:var(--ic-fill,var(--ic-brass));}
+  .ai-call .hand{transform-box:fill-box;transform-origin:50% 50%;animation:icRing calc(2.6s * var(--spd)) ease-in-out infinite;}
+  .ai-call .wave{fill:none;stroke:var(--ic-line);stroke-width:2.1;stroke-linecap:round;opacity:0;animation:icWave calc(2.6s * var(--spd)) ease-out infinite;}
+  .ai-call .w2{animation-delay:calc(.18s * var(--spd));}
+  @keyframes icRing{0%,34%,70%,100%{transform:rotate(0)}38%{transform:rotate(-14deg)}44%{transform:rotate(12deg)}50%{transform:rotate(-10deg)}56%{transform:rotate(8deg)}62%{transform:rotate(-4deg)}}
+  @keyframes icWave{0%,36%{opacity:0;transform:translate(-2px,2px)}50%{opacity:1;transform:translate(0,0)}80%,100%{opacity:0;transform:translate(1.5px,-1.5px)}}
+
+  .ai-pin .f{fill:var(--ic-fill,var(--ic-coral));}
+  .ai-pin .d{fill:var(--ic-detail);}
+  .ai-pin .drop{transform-box:fill-box;transform-origin:50% 100%;animation:icDrop calc(2.4s * var(--spd)) cubic-bezier(.3,.7,.4,1) infinite;}
+  .ai-pin .shadow{fill:var(--ic-shadow);transform-box:fill-box;transform-origin:50% 50%;animation:icShadow calc(2.4s * var(--spd)) cubic-bezier(.3,.7,.4,1) infinite;}
+  .ai-pin .ripple{fill:none;stroke:var(--ic-line2);stroke-width:1;transform-box:fill-box;transform-origin:50% 50%;opacity:0;animation:icRipple calc(2.4s * var(--spd)) ease-out infinite;}
+  @keyframes icDrop{0%,100%{transform:translateY(0) scale(1)}28%{transform:translateY(-3.4px) scale(.97,1.04)}48%{transform:translateY(0) scale(1.1,.88)}58%{transform:translateY(0) scale(.96,1.04)}68%{transform:translateY(0) scale(1)}}
+  @keyframes icShadow{0%,100%{transform:scale(1);opacity:.9}28%{transform:scale(.55);opacity:.4}48%{transform:scale(1.18);opacity:1}68%{transform:scale(1)}}
+  @keyframes icRipple{0%,46%{opacity:0;transform:scale(.6)}52%{opacity:.9}100%{opacity:0;transform:scale(2.9)}}
+
+  .ai-chat .f{fill:var(--ic-fill,var(--ic-green));}
+  .ai-chat .dot{fill:var(--ic-detail);transform-box:fill-box;transform-origin:50% 50%;animation:icType calc(1.5s * var(--spd)) ease-in-out infinite;}
+  .ai-chat .d2{animation-delay:calc(.15s * var(--spd));}
+  .ai-chat .d3{animation-delay:calc(.3s * var(--spd));}
+  .ai-chat .bub{transform-box:fill-box;transform-origin:15% 90%;animation:icPop calc(3.2s * var(--spd)) ease-in-out infinite;}
+  @keyframes icType{0%,60%,100%{transform:translateY(0);opacity:.7}30%{transform:translateY(-2px);opacity:1}}
+  @keyframes icPop{0%,70%,100%{transform:scale(1) rotate(0)}78%{transform:scale(1.1) rotate(-5deg)}86%{transform:scale(.97) rotate(1deg)}93%{transform:scale(1.02) rotate(0)}}
+
+  .ai-route .f{fill:var(--ic-fill,var(--ic-brass));}
+  .ai-route .d{fill:var(--ic-detail);}
+  .ai-route .trail{fill:none;stroke:var(--ic-line);stroke-width:2;stroke-linecap:round;stroke-dasharray:.1 3.3;animation:icMarch calc(1.1s * var(--spd)) linear infinite;}
+  .ai-route .start{fill:var(--ic-line);transform-box:fill-box;transform-origin:50% 50%;animation:icBeat calc(1.4s * var(--spd)) ease-in-out infinite;}
+  .ai-route .flag{transform-box:fill-box;transform-origin:50% 100%;animation:icDrop calc(2.4s * var(--spd)) cubic-bezier(.3,.7,.4,1) infinite;}
+  @keyframes icMarch{to{stroke-dashoffset:-6.8}}
+  @keyframes icBeat{0%,100%{transform:scale(1)}50%{transform:scale(.68)}}
+
+  .ai-photo .f{fill:var(--ic-fill,var(--ic-teal));}
+  .ai-photo .d{fill:var(--ic-detail);}
+  .ai-photo .sun{fill:#FFE08A;transform-box:fill-box;transform-origin:50% 50%;animation:icSun calc(2.8s * var(--spd)) ease-in-out infinite;}
+  @keyframes icSun{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+
+  .badge bm-icon{width:28px;height:28px;}
+  .addr-link .badge bm-icon{width:24px;height:24px;}
+  .btn bm-icon{width:22px;height:22px;}
+  .btn-sm bm-icon{width:19px;height:19px;}
+  .btn-brass bm-icon{--ic-fill:#2A1604;--ic-detail:#F7C98A;--ic-line:#2A1604;--ic-line2:#2A1604;--ic-shadow:rgba(42,22,4,.3);}
+  .btn-wa bm-icon{--ic-fill:#04210F;--ic-detail:#5CF29A;--ic-line:#04210F;--ic-line2:#04210F;--ic-shadow:rgba(4,33,15,.3);}
+  .fab bm-icon{width:32px;height:32px;--ic-fill:#fff;--ic-detail:#15A34A;}
+  .nav-links bm-icon{width:19px;height:19px;}
+  .drawer nav bm-icon{width:24px;height:24px;}
   @media (hover:hover){
-    a:hover .ring{animation-duration:.9s;}
-    a:hover .pin{animation-duration:1s;}
+    .nav-links bm-icon{--play:paused;}
+    .nav-links a:hover bm-icon{--play:running;}
+    .tile:hover bm-icon,.row:hover bm-icon,.btn:hover bm-icon,.addr-link:hover bm-icon,.fab:hover bm-icon{--spd:.6;}
   }
 
   /* ---------- Nav ---------- */
@@ -210,7 +271,7 @@
   .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:1.06rem;white-space:nowrap;}
   .brand-mark{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brass),var(--brass-2));color:#241505;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);}
   .nav-links{display:none;list-style:none;margin:0;padding:0;gap:4px;}
-  .nav-links a{display:block;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--muted);transition:color .3s, background .3s;}
+  .nav-links a{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--muted);transition:color .3s, background .3s;}
   .nav-links a:hover{color:var(--ink);background:rgba(255,255,255,.08);}
   .nav-actions{display:flex;align-items:center;gap:8px;}
   .nav-call{min-height:44px;width:44px;padding:0;}
@@ -237,6 +298,7 @@
   }
   .drawer.open{transform:none;opacity:1;pointer-events:auto;}
   .drawer-top{display:flex;align-items:center;justify-content:space-between;padding:2px 2px 10px 6px;}
+  .drawer nav .dl{display:flex;align-items:center;gap:12px;}
   .drawer nav a{display:flex;align-items:center;justify-content:space-between;padding:16px 14px;border-radius:14px;font-weight:600;font-size:1.05rem;}
   .drawer nav a:active{background:rgba(255,255,255,.08);}
   .drawer nav a + a{border-top:1px solid rgba(255,255,255,.07);}
@@ -499,6 +561,13 @@
   .fab::before,.fab::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:2px solid var(--wa);opacity:0;animation:halo 3s var(--ease) infinite;}
   .fab::after{animation-delay:1.1s;}
   .fab:active{transform:scale(.92);}
+  .fab-tip{position:absolute;right:calc(100% + 12px);top:50%;margin-top:-19px;height:38px;display:flex;align-items:center;white-space:nowrap;padding:0 14px;
+    border-radius:14px 14px 4px 14px;font-weight:700;font-size:.86rem;color:var(--ink);
+    background:linear-gradient(135deg,rgba(22,44,38,.96),rgba(14,28,24,.92));border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 14px 30px -12px rgba(0,0,0,.8);opacity:0;transform:translateX(10px) scale(.9);transform-origin:100% 50%;
+    transition:opacity .35s var(--ease),transform .5s var(--spring);pointer-events:none;}
+  .fab.tip .fab-tip{opacity:1;transform:none;}
+  @media (hover:hover){.fab:hover .fab-tip{opacity:1;transform:none;}}
   @media (hover:hover){.fab:hover{transform:translateY(-4px) scale(1.05);}}
 
   /* ---------- Toast ---------- */
@@ -525,9 +594,10 @@
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
-    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.29-1.38a9.9 9.9 0 0 0 4.7 1.19h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67a8.2 8.2 0 0 1 5.83 2.42 8.19 8.19 0 0 1 2.41 5.83c0 4.55-3.7 8.24-8.25 8.24a8.3 8.3 0 0 1-4.2-1.15l-.3-.18-3.14.82.84-3.06-.2-.31a8.22 8.22 0 0 1-1.26-4.39c0-4.55 3.7-8.22 8.27-8.22M8.53 7.33c-.16 0-.43.06-.66.31s-.87.86-.87 2.07.89 2.39 1.01 2.56c.13.16 1.76 2.69 4.25 3.77.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.46-.6 1.67-1.18s.21-1.07.14-1.18c-.06-.1-.23-.16-.48-.28s-1.46-.72-1.69-.81-.39-.13-.56.13-.65.81-.8.97c-.14.16-.29.19-.54.06-.26-.13-1.07-.4-2.05-1.26-.76-.68-1.27-1.51-1.42-1.77-.14-.25-.01-.39.11-.51.12-.12.26-.31.4-.46.12-.15.16-.26.25-.43.08-.16.04-.31-.02-.44-.06-.13-.56-1.39-.79-1.9-.19-.45-.4-.44-.56-.45h-.48z"/></symbol>
+    <linearGradient id="gr-brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFDDA6"/><stop offset=".55" stop-color="#E6AC62"/><stop offset="1" stop-color="#C77B2E"/></linearGradient>
+    <linearGradient id="gr-coral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB38E"/><stop offset=".5" stop-color="#FF7A59"/><stop offset="1" stop-color="#E0473F"/></linearGradient>
+    <linearGradient id="gr-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#86F7AF"/><stop offset=".5" stop-color="#34D876"/><stop offset="1" stop-color="#12A04F"/></linearGradient>
+    <linearGradient id="gr-teal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9BEEDB"/><stop offset="1" stop-color="#2A9A82"/></linearGradient>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
@@ -545,13 +615,13 @@
         Bommarillu
       </a>
       <ul class="nav-links">
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#visit">Location</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#gallery"><bm-icon name="photo"></bm-icon>Gallery</a></li>
+        <li><a href="#visit"><bm-icon name="pin"></bm-icon>Location</a></li>
+        <li><a href="#contact"><bm-icon name="chat"></bm-icon>Contact</a></li>
       </ul>
       <div class="nav-actions">
         <a class="btn btn-brass btn-sm nav-call" href="tel:+918885833778" aria-label="Call +91 88858 33778">
-          <svg class="ring" width="18" height="18"><use href="#i-phone"/></svg><span class="lbl">Call now</span>
+          <bm-icon name="call"></bm-icon><span class="lbl">Call now</span>
         </a>
         <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h10"/></svg>
@@ -570,13 +640,13 @@
     </button>
   </div>
   <nav>
-    <a href="#gallery">Gallery <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
-    <a href="#visit">Location <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
-    <a href="#contact">Contact <svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+    <a href="#gallery"><span class="dl"><bm-icon name="photo"></bm-icon>Gallery</span><svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+    <a href="#visit"><span class="dl"><bm-icon name="pin"></bm-icon>Location</span><svg width="18" height="18"><use href="#i-arrow"/></svg></a>
+    <a href="#contact"><span class="dl"><bm-icon name="chat"></bm-icon>Contact</span><svg width="18" height="18"><use href="#i-arrow"/></svg></a>
   </nav>
   <div class="drawer-cta">
-    <a class="btn btn-wa" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener"><svg class="bubble" width="18" height="18"><use href="#i-wa"/></svg>WhatsApp</a>
-    <a class="btn btn-brass" href="tel:+918885833778"><svg class="ring" width="18" height="18"><use href="#i-phone"/></svg>Call</a>
+    <a class="btn btn-wa" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener"><bm-icon name="chat"></bm-icon>WhatsApp</a>
+    <a class="btn btn-brass" href="tel:+918885833778"><bm-icon name="call"></bm-icon>Call</a>
   </div>
 </div>
 
@@ -598,15 +668,15 @@
       <p class="lede rise d4">A quiet, comfortable stay in the heart of Rajamahendravaram, run by people who'll treat you like family.</p>
       <div class="hero-actions rise d5">
         <a class="btn btn-wa" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener">
-          <svg class="bubble" width="20" height="20"><use href="#i-wa"/></svg><span><span class="lg">Book on </span>WhatsApp</span>
+          <bm-icon name="chat"></bm-icon><span><span class="lg">Book on </span>WhatsApp</span>
         </a>
         <a class="btn" href="tel:+918885833778">
-          <svg class="ring" width="19" height="19"><use href="#i-phone"/></svg>Call now
+          <bm-icon name="call"></bm-icon>Call now
         </a>
       </div>
       <a class="addr-link rise d6" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener">
         <span class="badge" aria-hidden="true">
-          <svg width="22" height="24" viewBox="0 0 22 24"><ellipse class="pin-shadow" cx="11" cy="22" rx="4" ry="1.3" fill="currentColor" opacity=".5"/><g class="pin"><svg x="-1" y="-1" width="24" height="24"><use href="#i-pin"/></svg></g></svg>
+          <bm-icon name="pin"></bm-icon>
         </span>
         <span class="t"><b>Prakasam Nagar, Rajamahendravaram</b><span>Tap for directions in Google Maps</span></span>
         <svg class="ico-arrow" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
@@ -617,7 +687,7 @@
       <div class="frame glass" id="tilt">
         <div class="shot"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78" alt="" width="900" height="1948" decoding="async"></div>
         <div class="float-chip one glass"><span class="badge"><span class="stars" style="font-size:1rem;letter-spacing:0">★</span></span><span>4.5 on Google<small>56 reviews</small></span></div>
-        <div class="float-chip two glass"><span class="badge"><svg width="18" height="18"><use href="#i-house"/></svg></span><span>Service apartment<small>Prakasam Nagar</small></span></div>
+        <div class="float-chip two glass"><span class="badge"><bm-icon name="pin"></bm-icon></span><span>Service apartment<small>Prakasam Nagar</small></span></div>
       </div>
     </div>
   </div>
@@ -628,18 +698,18 @@
 <section class="quick" id="quick" aria-label="Contact quick actions">
   <div class="wrap tiles">
     <a class="tile glass reveal" href="tel:+918885833778">
-      <span class="badge" aria-hidden="true"><svg class="ring" width="22" height="22"><use href="#i-phone"/></svg></span>
+      <span class="badge" aria-hidden="true"><bm-icon name="call"></bm-icon></span>
       <span class="t"><span class="k">Call us</span><span class="v">+91 88858 33778</span></span>
       <span class="go" aria-hidden="true"><svg width="16" height="16"><use href="#i-arrow"/></svg></span>
     </a>
     <a class="tile glass reveal r2" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener">
-      <span class="badge wa" aria-hidden="true"><svg class="bubble" width="22" height="22"><use href="#i-wa"/></svg></span>
+      <span class="badge wa" aria-hidden="true"><bm-icon name="chat"></bm-icon></span>
       <span class="t"><span class="k">WhatsApp</span><span class="v">Message to book</span></span>
       <span class="go" aria-hidden="true"><svg width="16" height="16"><use href="#i-arrow"/></svg></span>
     </a>
     <a class="tile glass reveal r3" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener">
       <span class="badge" aria-hidden="true">
-        <svg width="22" height="24" viewBox="0 0 22 24"><ellipse class="pin-shadow" cx="11" cy="22" rx="4" ry="1.3" fill="currentColor" opacity=".5"/><g class="pin"><svg x="-1" y="-1" width="24" height="24"><use href="#i-pin"/></svg></g></svg>
+        <bm-icon name="pin"></bm-icon>
       </span>
       <span class="t"><span class="k">Directions</span><span class="v">Open in Google Maps</span></span>
       <span class="go" aria-hidden="true"><svg width="16" height="16"><use href="#i-arrow"/></svg></span>
@@ -687,7 +757,7 @@
 
         <a class="row" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener">
           <span class="badge" aria-hidden="true">
-            <svg width="22" height="24" viewBox="0 0 22 24"><ellipse class="pin-shadow" cx="11" cy="22" rx="4" ry="1.3" fill="currentColor" opacity=".5"/><g class="pin"><svg x="-1" y="-1" width="24" height="24"><use href="#i-pin"/></svg></g></svg>
+            <bm-icon name="pin"></bm-icon>
           </span>
           <span class="t">
             <span class="k">Address</span>
@@ -697,7 +767,7 @@
         </a>
 
         <a class="row" href="tel:+918885833778">
-          <span class="badge" aria-hidden="true"><svg class="ring" width="22" height="22"><use href="#i-phone"/></svg></span>
+          <span class="badge" aria-hidden="true"><bm-icon name="call"></bm-icon></span>
           <span class="t">
             <span class="k">Phone</span>
             <span class="v">+91 88858 33778</span>
@@ -706,7 +776,7 @@
         </a>
 
         <a class="row" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener">
-          <span class="badge wa" aria-hidden="true"><svg class="bubble" width="22" height="22"><use href="#i-wa"/></svg></span>
+          <span class="badge wa" aria-hidden="true"><bm-icon name="chat"></bm-icon></span>
           <span class="t">
             <span class="k">WhatsApp</span>
             <span class="v">+91 88858 33778</span>
@@ -716,7 +786,7 @@
 
         <div class="card-actions">
           <a class="btn btn-brass" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener">
-            <svg width="18" height="18"><use href="#i-pin"/></svg>Get directions
+            <bm-icon name="route"></bm-icon>Get directions
           </a>
           <button class="btn" type="button" id="copyAddr">
             <svg width="18" height="18" id="copyIcon"><use href="#i-copy"/></svg><span id="copyLbl">Copy address</span>
@@ -727,7 +797,7 @@
       <div class="map glass reveal r2">
         <iframe src="https://www.google.com/maps?q=17.011994,81.7957109&z=17&output=embed" loading="lazy" title="Map showing Bommarillu Home Stay" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         <a class="btn btn-sm" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener" style="background:linear-gradient(135deg,rgba(14,28,24,.82),rgba(14,28,24,.66))">
-          Open in Maps<svg class="ico-arrow" width="16" height="16"><use href="#i-arrow"/></svg>
+          <bm-icon name="route"></bm-icon>Open in Maps<svg class="ico-arrow" width="16" height="16"><use href="#i-arrow"/></svg>
         </a>
       </div>
     </div>
@@ -739,16 +809,17 @@
   <div class="wrap foot">
     <span class="brand"><span class="brand-mark"><svg width="18" height="18"><use href="#i-house"/></svg></span>Bommarillu Home Stay</span>
     <div class="foot-links">
-      <a class="btn btn-sm" href="tel:+918885833778"><svg class="ring" width="16" height="16"><use href="#i-phone"/></svg>Call</a>
-      <a class="btn btn-sm" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener"><svg width="16" height="16" style="color:var(--wa)"><use href="#i-wa"/></svg>WhatsApp</a>
-      <a class="btn btn-sm" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener"><svg width="16" height="16" style="color:var(--brass)"><use href="#i-pin"/></svg>Maps</a>
+      <a class="btn btn-sm" href="tel:+918885833778"><bm-icon name="call"></bm-icon>Call</a>
+      <a class="btn btn-sm" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener"><bm-icon name="chat"></bm-icon>WhatsApp</a>
+      <a class="btn btn-sm" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener"><bm-icon name="pin"></bm-icon>Maps</a>
     </div>
     <small>© <span id="year">2026</span> Bommarillu Home Stay · Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103</small>
   </div>
 </footer>
 
 <a class="fab" id="fab" href="https://wa.me/918885833778?text=Hi%2C%20I%27d%20like%20to%20book%20a%20stay%20at%20Bommarillu%20Home%20Stay" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg class="bubble" width="28" height="28"><use href="#i-wa"/></svg>
+  <bm-icon name="chat"></bm-icon>
+  <span class="fab-tip">Chat with us</span>
 </a>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
@@ -804,10 +875,17 @@
   var nav = document.getElementById('nav');
   var fab = document.getElementById('fab');
   var ticking = false;
+  var tipShown = false;
   function onScroll(){
     var y = window.scrollY;
     nav.classList.toggle('scrolled', y > 40);
-    fab.classList.toggle('show', y > window.innerHeight * 0.55);
+    var showFab = y > window.innerHeight * 0.55;
+    fab.classList.toggle('show', showFab);
+    if (showFab && !tipShown) {
+      tipShown = true;
+      setTimeout(function(){ fab.classList.add('tip'); }, 700);
+      setTimeout(function(){ fab.classList.remove('tip'); }, 4700);
+    }
     ticking = false;
   }
   window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
