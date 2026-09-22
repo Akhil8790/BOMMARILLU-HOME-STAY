@@ -531,7 +531,7 @@ document.documentElement.classList.add('js');
     .float-chip .badge::after{display:none;}
     .float-chip .badge .stars{color:#241505 !important;}
     .float-chip .badge bm-icon{--ic-fill:#241505;--ic-fill2:rgba(36,21,5,.55);}
-    .float-chip.one{left:-64px;top:14%;animation:bob 6s ease-in-out infinite;}
+    .float-chip.one{left:-64px;top:var(--chip1-top,14%);animation:bob 6s ease-in-out infinite;}
     .float-chip.two{right:-54px;bottom:12%;animation:bob 7s ease-in-out -2s infinite;}
     @keyframes bob{0%,100%{translate:0 0;}50%{translate:0 -10px;}}
     .scroll-cue{display:grid;place-items:center;position:absolute;left:50%;bottom:22px;translate:-50% 0;width:28px;height:44px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);}
@@ -655,6 +655,7 @@ document.documentElement.classList.add('js');
     transition:transform .25s var(--smooth), opacity .45s var(--ease), box-shadow .2s var(--smooth);
   }
   .g.tall{grid-row:span 2;}
+  @media (max-width:899px){.g.mtall{grid-row:span 2;}}
   @media (min-width:900px){.g.wide{grid-column:span 2;}}
   .g img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease), filter .6s var(--ease);}
   .g.has-crop{container-type:size;}
@@ -1102,7 +1103,10 @@ document.documentElement.classList.add('js');
   var CAT = {"building": "Building", "flat": "Inside the 2 BHK flat", "common": "Common areas"};
   var PHOTOS = [{"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ", "g": 1, "cat": "building", "cap": "The building", "size": "tall", "crop": [1170, 1804, "50% 66.8%"]}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOQBCQZ230xpTnVsGB4EcDkb2M_TKcpb5k0bu9pK6K3LJdE6gOCD5oHNotQMbc9YJ_1tFUQdwVceQIrlR5kg88RtxpPwJM83bw7JZ7vVMrWfUOtT9tPmKDPoLsjaQ74NYS-1CXT", "g": 0, "cat": "common", "cap": "Covered parking", "size": "wide"}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmMkdkMZjGSXW36U6st9_DHI2jAysGPQjkWg8JtTBQ6BmOsJ4JXdZO1dPXD4a6y4EjwgmH7IKcUnNtedN1A59GzMAz4p8DbntjMliI3FVstWrHqshNUgvMk8Pz-INACLpLPi2LJr", "g": 0, "cat": "flat", "cap": "Bedroom"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmOFOROJE4DiIV1Jl8VpAI-bJ87wo9bK-npPW0h9MwpGkiam_Lz9OpnTGj1CP4UDiBsIvX8dWCmKT03YYgNT95jLMpa502q6AzEHIL9TrG47TO24RruIr5QHxUY3uDpfmL-jLfc", "g": 1, "cat": "building", "cap": "Front of the building", "size": "tall"}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmN15HNnCUnNbaCt-9Dea1bnAPLdrhzb2zHmDPROmt_ycQWhzCMNvJq5s8cDRyxEEAY33KSdwAz0_A4scH4QCMAZR41W6VjYY_UmeGlt85eBWXZa6RYROmGYErKHR47ELeiEHqSP", "g": 0, "cat": "flat", "cap": "Hall / living room", "size": "wide"}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOD00zSleczeF05rLpAMjQmo0k_wfHv0ds-mGNPgNbCJFdBMZQvL5LQwegDx8GybHdR3XU615oOp_EmKtACt_tZE3bppUE_U170-HWJcvnsohZAUg-MGgGdWMoJ4lE63pyfXVmW", "g": 0, "cat": "flat", "cap": "Dining area"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnPY82S28Fo2_CTYWi8vroJPX5OlqjB9uhk4hmRBK7muKKYqhRDttvu-RcXZSrxqUWkm-QTip1T_wpmaS6VwNXyo1gK56EbM3qnorxWPqwtV-eZOYtGcrFNT6Su32uoseptiFEg", "g": 1, "cat": "building", "cap": "Entrance and name board"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnSoOl68Pu3h-H96yFPQKF08R1y3YH9TPUw17Tb1iGPNS0P9gbDX7C7wisNMK7bs6IKGmFQmCqA-RN3OBTbZGqRxyUUZiQvH0FEJo9HI56MIlft8we7BJ04PWv2dKnPclz2AfHHIi4g_iKe", "g": 1, "cat": "flat", "cap": "Dining table", "size": "tall"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkbBHWtZbDfFma0ARh1PB8-uZGm36MLmpsMytfY2P0cWon7rSOra8ph20xBjmwS3rNhbYEdKh4uBo-HH_sflfamVh__wNJ8y_lItjv5MUHYCjV-WTTRaWL-cVd-QIQilfq1P8g", "g": 1, "cat": "common", "cap": "Ground floor entrance"}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOxkTFk9gnCGUPwKtrIavGDGHiO5x7CjBqxpetbhYzsNhYd8dgd6rZM5gYyccwz5ykaLdYnhYa-Dm1ZSzmZoOWjytEtWcd6A1TF2IDZ8isOAEFKFcnIwcsk0xw6xlrH87J0wfWI", "g": 0, "cat": "common", "cap": "Ground floor lobby"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl5G2OQ3akjwKx_NaNctvOIwRb_lVqB26bKMz6P8KlpJKMcjI_oceJI-F1FL26pYlaZ3TanRH7qXmLp3G49GM_iQ6OiO5wkSKt7MiZkYbAEf-wSnKiLAVjgrC9G-Xh1CKbs8OxG9A", "g": 1, "cat": "building", "cap": "The neighbourhood at night", "size": "wide"}, {"src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOPcP2XjaRmXuE5TmTXjCg1F6DLHWAE7rK_Kjer96LuVAIeqalSQik8IcMga2iwgWOVo3XVdyRz3RAtVrYyvfB6GzozhQFr44Ez6-NU2H_oLQmNdfATwiaVJu9-z-oWjpFU_Osx", "g": 0, "cat": "flat", "cap": "Dining corner"}];
 
-  function url(p, w, h){ return p.src + '=w' + w + '-h' + h + (p.g ? '-k-no-rj-l80' : '-no'); }
+  function url(p, w, h){
+    if (p.local) return (w > 900 || h > 900) ? p.src : (p.thumb || p.src);
+    return p.src + '=w' + w + '-h' + h + (p.g ? '-k-no-rj-l80' : '-no');
+  }
 
   /* Ripple */
   document.addEventListener('pointerdown', function(e){
@@ -1186,7 +1190,8 @@ document.documentElement.classList.add('js');
     b.setAttribute('aria-label', 'View photo: ' + p.cap);
     var tall = /\btall\b/.test(p.size || '');
     var tw = p.tw || (p.crop ? 700 : (tall ? 600 : 800)), th = p.th || (p.crop ? 1520 : (tall ? 900 : 600));
-    var img = '<img loading="lazy" decoding="async" alt="' + p.cap + '" src="' + url(p, tw, th) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '>';
+    var srcset = (p.local && p.thumb) ? ' srcset="' + p.thumb + ' 800w, ' + p.src + ' ' + (p.w || 1440) + 'w" sizes="(min-width: 900px) 560px, 50vw"' : '';
+    var img = '<img loading="lazy" decoding="async" alt="' + p.cap + '" src="' + url(p, tw, th) + '"' + srcset + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '>';
     if(p.crop){ b.className += ' has-crop'; img = '<span class="gcrop">' + img + '</span>'; }
     b.innerHTML = img + '<span class="cap"><span>' + p.cap + '</span><span class="zoom" aria-hidden="true"><svg width="15" height="15"><use href="#i-expand"/></svg></span></span>';
     grid.appendChild(b);

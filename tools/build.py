@@ -61,10 +61,13 @@ def preload_markup(hero):
 
 def hero_vars(hero):
     box, pbox, fbox = hero['box'], hero.get('portraitBox', hero['box']), hero.get('frameBox', hero['box'])
-    return ('--hero-w:%s;--hero-h:%s;--hero-pos:%s;--hero-pw:%s;--hero-ph:%s;--hero-ppos:%s;'
-            '--frame-w:%s;--frame-h:%s;--frame-pos:%s') % (
+    css = ('--hero-w:%s;--hero-h:%s;--hero-pos:%s;--hero-pw:%s;--hero-ph:%s;--hero-ppos:%s;'
+           '--frame-w:%s;--frame-h:%s;--frame-pos:%s') % (
         box[0], box[1], hero['pos'], pbox[0], pbox[1], hero.get('portraitPos', hero['pos']),
         fbox[0], fbox[1], hero.get('framePos', hero['pos']))
+    if hero.get('chip1Top'):
+        css += ';--chip1-top:%s' % hero['chip1Top']
+    return css
 
 
 def specs_html(stay):
@@ -84,9 +87,27 @@ def specs_html(stay):
     return '\n'.join(out)
 
 
+def localize(stay, depth, base):
+    """Photos stored in this repo (paths starting with assets/) are made page-relative;
+    share and search images must be absolute URLs."""
+    stay = json.loads(json.dumps(stay))
+    rel = lambda v: ('../' * depth + v) if isinstance(v, str) and v.startswith('assets/') else v
+    absu = lambda v: (base + v) if isinstance(v, str) and v.startswith('assets/') else v
+    for k in ('src', 'frameSrc', 'portrait'):
+        if k in stay['hero']:
+            stay['hero'][k] = rel(stay['hero'][k])
+    for p in stay['photos']:
+        p['src'], p['thumb'] = rel(p['src']), rel(p.get('thumb'))
+        if p['thumb'] is None:
+            del p['thumb']
+    stay['seo']['image'] = absu(stay['seo']['image'])
+    stay['ld']['image'] = absu(stay['ld']['image'])
+    return stay
+
+
 def context(key, data):
     stays, order = data['stays'], data['order']
-    stay = stays[key]
+    stay = localize(stays[key], stays[key]['path'].count('/'), data['base'])
     c = stay['contact']
     ld = dict(stay['ld'])
     ld = {k: ld[k] for k in ld if k in ('@context', '@type', 'name', 'description')} | \

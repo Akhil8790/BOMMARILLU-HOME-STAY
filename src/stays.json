@@ -520,24 +520,30 @@
       "name": "Farm Villa",
       "short": "Farm Villa",
       "seo": {
-        "title": "Farm Villa Rajahmundry — Pool, Home Theatre and Campfire in Bommuru",
-        "description": "A farm villa in Bommuru, Rajahmundry, 5 minutes from the highway, with a pool, home theatre, campfire, 24/7 CCTV and parking. Great for haldi, birthdays and get-togethers. Rated 4.9 on Google. Call +91 89195 74232.",
-        "ogTitle": "Farm Villa Rajahmundry — Pool, Home Theatre and Campfire in Bommuru",
-        "ogDescription": "A farm villa with a pool and home theatre in Bommuru, 5 minutes from the highway. Rated 4.9 on Google. Call or WhatsApp to book.",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1200-h675-k-no-rj-l80"
+        "title": "Farm Villa Rajahmundry — 3 Bedroom Farm Villa with Pool in Bommuru",
+        "description": "Farm Villa in Bommuru, Rajahmundry: 3 bedrooms, a swimming pool, home theatre projector and campfire, 5 minutes from the highway. Rent the whole villa for 24 hours at ₹18,000 for 15–20 guests. Rated 4.9 on Google. Call +91 89195 74232.",
+        "ogTitle": "Farm Villa Rajahmundry — 3 Bedroom Farm Villa with Pool in Bommuru",
+        "ogDescription": "3 bedrooms, a pool and a home theatre, 5 minutes from the highway. 24-hour rental at ₹18,000 for 15–20 guests. Rated 4.9 on Google.",
+        "image": "assets/farm-villa/night-og.jpg"
       },
       "ld": {
         "@context": "https://schema.org",
         "@type": "LodgingBusiness",
         "name": "Farm Villa",
-        "description": "A farm villa in Bommuru, Rajahmundry, with a pool, home theatre and campfire, 5 minutes from the highway.",
+        "description": "A 3 bedroom farm villa with a swimming pool, home theatre and campfire in Bommuru, Rajahmundry, rented for 24 hours for 15–20 guests.",
         "containsPlace": {
           "@type": "House",
           "name": "Farm villa",
+          "numberOfBedrooms": 3,
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "minValue": 15,
+            "maxValue": 20
+          },
           "accommodationCategory": "Farm villa"
         },
         "telephone": "+91-8919574232",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1200-h675-k-no-rj-l80",
+        "image": "assets/farm-villa/night-og.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Old Bommuru Road, GPR Layout, Kotta Bommuru",
@@ -561,7 +567,7 @@
           },
           {
             "@type": "LocationFeatureSpecification",
-            "name": "Home theatre",
+            "name": "Home theatre projector",
             "value": true
           },
           {
@@ -579,29 +585,31 @@
             "name": "Parking",
             "value": true
           }
-        ]
+        ],
+        "priceRange": "₹18,000 for 24 hours"
       },
       "hero": {
-        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1600-h900-k-no-rj-l78",
-        "w": 1600,
-        "h": 900,
+        "src": "assets/farm-villa/night.jpg",
+        "w": 1107,
+        "h": 806,
         "box": [
-          16,
-          9
+          1107,
+          806
         ],
-        "pos": "55% 50%",
+        "pos": "50% 60%",
         "portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1080-h1920-fcrop64=1,66660000b74bffff-k-no-rj-l78",
         "portraitBox": [
           9,
           16
         ],
         "portraitPos": "50% 50%",
-        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1600-h900-k-no-rj-l78",
+        "frameSrc": "assets/farm-villa/night.jpg",
         "frameBox": [
           4,
           5
         ],
-        "framePos": "56% 50%"
+        "framePos": "0% 50%",
+        "chip1Top": "40%"
       },
       "contact": {
         "tel": "+918919574232",
@@ -619,29 +627,33 @@
         "sectionIcon": "pool",
         "chip": "4.9 · 14 Google reviews",
         "chipAria": "Rated 4.9 out of 5 from 14 Google reviews",
-        "eyebrow": "Farm villa<span class=\"sm\"> · Bommuru</span><span class=\"lg\"> · Bommuru, Rajahmundry</span>",
+        "eyebrow": "Farm villa<span class=\"sm\"> · 15–20 guests</span><span class=\"lg\"> · 3 bedrooms · Bommuru</span>",
         "h1": "Farm <em>Villa</em>",
-        "lede": "A farm villa in Bommuru, just 5 minutes from the highway, with a pool, a home theatre and a peaceful green setting for family stays and celebrations.",
+        "lede": "A 3 bedroom farm villa in Bommuru, just 5 minutes from the highway, with a pool that glows at night, a home theatre and a peaceful green setting. Rent the whole villa for 24 hours.",
         "factsAria": "What the villa has",
         "addrShort": "Old Bommuru Road, Bommuru",
         "chip1": "4.9 on Google",
         "chip1s": "14 reviews",
         "chip2Icon": "pool",
-        "chip2": "Farm villa with pool",
-        "chip2s": "5 min from the highway",
+        "chip2": "3 bedrooms · pool",
+        "chip2s": "15–20 guests · 24-hour rental",
         "tileWa": "Book the farm villa",
-        "welcome": "Greenery, a pool and space for everyone, just <em>5 minutes</em> from the highway in Bommuru.",
+        "welcome": "Greenery, a pool that glows at night and space for up to <em>20 guests</em>, just 5 minutes from the highway in Bommuru.",
         "kicker": "The villa",
-        "h2": "A farm villa<br>made for get-togethers",
-        "sectionLede": "Chill with friends, unwind with family or host your next celebration, surrounded by greenery and just 5 minutes from the highway.",
-        "note": "Best for haldi, mehendi, birthdays, anniversaries, get-togethers and pool parties.",
-        "galleryLede": "Real photos of the villa, the pool, the rooftop lawn and the rooms. Tap any photo to view it full size.",
-        "cardSub": "Farm villa · Open 24 hours · 4.9 ★ on Google",
+        "h2": "A 3 bedroom farm villa<br>made for get-togethers",
+        "sectionLede": "Book the whole villa for a weekend chill, a birthday or a family retreat. Custom packages are available for events, priced by headcount.",
+        "note": "Best for birthdays, anniversaries, bachelorette parties, sangeet nights, family reunions and naming ceremonies. Electricity and cleaning are extra.",
+        "galleryLede": "Real photos from Farm Villa's Instagram and Google listing: the pool by night, the three bedrooms and the rooftop lawn. Tap any photo to view it full size.",
+        "cardSub": "Farm villa · 3 bedrooms · 15–20 guests · 4.9 ★ on Google",
         "mapTitle": "Map showing Farm Villa",
         "footNote": "Farm Villa · Old Bommuru Road, GPR Layout, Kotta Bommuru, Rajahmundry Rural, Andhra Pradesh 533107",
         "stars": "★★★★★"
       },
       "facts": [
+        [
+          "bed",
+          "3 Bedrooms"
+        ],
         [
           "pool",
           "Pool"
@@ -653,33 +665,29 @@
         [
           "fire",
           "Campfire"
-        ],
-        [
-          "shield",
-          "24/7 CCTV"
         ]
       ],
       "highlight": {
-        "stat": "4.9",
-        "statLabel": "on Google",
-        "title": "Loved by guests",
-        "text": "Guests on Google call it spacious, beautiful and the best place to hang out with friends."
+        "stat": "24",
+        "statLabel": "hours",
+        "title": "₹18,000 for the whole villa",
+        "text": "A 24-hour rental for 15–20 guests. Electricity and cleaning are charged separately."
       },
       "specs": [
         [
           "bed",
-          "Bedrooms",
-          "Space to rest after the party"
+          "3 Bedrooms",
+          "Including a deluxe bedroom with two beds"
         ],
         [
           "theatre",
           "Home theatre",
-          "Movie nights on the big screen"
+          "Projector movie nights for the group"
         ],
         [
           "pool",
           "Swimming pool",
-          "Made for pool parties"
+          "Lit up at night for pool parties"
         ],
         [
           "fire",
@@ -717,11 +725,21 @@
       },
       "photos": [
         {
+          "src": "assets/farm-villa/night.jpg",
+          "thumb": "assets/farm-villa/night-800.jpg",
+          "local": true,
+          "cat": "outdoors",
+          "cap": "The villa and pool at night",
+          "size": "wide tall",
+          "pos": "50% 55%",
+          "w": 1107
+        },
+        {
           "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM",
           "g": 1,
           "cat": "outdoors",
           "cap": "The villa and pool from above",
-          "size": "wide tall",
+          "size": "tall",
           "pos": "55% 55%",
           "tw": 1600,
           "th": 900
@@ -737,11 +755,30 @@
           "th": 900
         },
         {
+          "src": "assets/farm-villa/aerial-top.jpg",
+          "thumb": "assets/farm-villa/aerial-top-800.jpg",
+          "local": true,
+          "cat": "outdoors",
+          "cap": "The villa among green fields",
+          "size": "wide mtall",
+          "pos": "58% 50%",
+          "w": 1440
+        },
+        {
+          "src": "assets/farm-villa/bedroom-3.jpg",
+          "thumb": "assets/farm-villa/bedroom-3-800.jpg",
+          "local": true,
+          "cat": "inside",
+          "cap": "Third bedroom",
+          "size": "wide",
+          "pos": "40% 50%",
+          "w": 1440
+        },
+        {
           "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNq09cybq06c6fzqvcRtL1hnjk1KGZb7l7lECORjdV3gYJ38hlw8KKPJGLO-SnH4kwfe9tgPmzhkVb4ClNSzA4JcE4-xE6Hq8xxeZPI59CCMqhvzGortwE9UGpnLzLCViDKH20CRLxJ-mE",
           "g": 1,
           "cat": "inside",
-          "cap": "Spacious bedroom",
-          "size": "tall",
+          "cap": "Deluxe bedroom",
           "pos": "34% 55%",
           "tw": 1600,
           "th": 900
@@ -750,8 +787,7 @@
           "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwooWV0gMhSgDmrQ1GidFA-iFajy239jxT4MKuZFThRJ0zlb1cPfl5z4snn0eQ3JL6785w4qP6m_lzZOqPEcFCRBUNcVu2DsA86qWgFAoh_P6gYVAB02CBQUwSSt2Nja50XdI42-CSRHdK",
           "g": 1,
           "cat": "inside",
-          "cap": "Bedroom",
-          "size": "wide",
+          "cap": "Second bedroom",
           "pos": "50% 60%",
           "tw": 1200,
           "th": 675

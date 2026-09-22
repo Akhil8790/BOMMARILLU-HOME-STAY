@@ -532,7 +532,7 @@ document.documentElement.classList.add('js');
     .float-chip .badge::after{display:none;}
     .float-chip .badge .stars{color:#241505 !important;}
     .float-chip .badge bm-icon{--ic-fill:#241505;--ic-fill2:rgba(36,21,5,.55);}
-    .float-chip.one{left:-64px;top:14%;animation:bob 6s ease-in-out infinite;}
+    .float-chip.one{left:-64px;top:var(--chip1-top,14%);animation:bob 6s ease-in-out infinite;}
     .float-chip.two{right:-54px;bottom:12%;animation:bob 7s ease-in-out -2s infinite;}
     @keyframes bob{0%,100%{translate:0 0;}50%{translate:0 -10px;}}
     .scroll-cue{display:grid;place-items:center;position:absolute;left:50%;bottom:22px;translate:-50% 0;width:28px;height:44px;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);}
@@ -656,6 +656,7 @@ document.documentElement.classList.add('js');
     transition:transform .25s var(--smooth), opacity .45s var(--ease), box-shadow .2s var(--smooth);
   }
   .g.tall{grid-row:span 2;}
+  @media (max-width:899px){.g.mtall{grid-row:span 2;}}
   @media (min-width:900px){.g.wide{grid-column:span 2;}}
   .g img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease), filter .6s var(--ease);}
   .g.has-crop{container-type:size;}
@@ -1102,7 +1103,10 @@ document.documentElement.classList.add('js');
   var CAT = {"flat": "Inside the 3 BHK flat", "building": "Building"};
   var PHOTOS = [{"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqSA3uyT77w02LQq1BsaHoI0UXeM5ju9kZw_NqPIpJdGiLNIgcqX2oxjYsLgCAutDi71-nFzZ5j9SAHODNHQIIqWHqMWJ9gSXbOpCwLRBEpUkK0asphNzorDdzXYLJVp_-sC5y", "g": 1, "cat": "flat", "cap": "Hall / living room", "size": "wide tall", "pos": "45% 55%", "tw": 1600, "th": 1067}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl8rylTXskWhqPUFZqkBuKsVyfcUL2bH8K4HDT2fTfcrOhu-cFaFRYXSMTVBA4xjvPXytfhb1A5Rl9hzuxbuk_cfJVLAHBPQBqoIbXwWijPbUPG_RqIDEPlp75OhIMjb9b5rp5Cdw", "g": 1, "cat": "flat", "cap": "Modular kitchen", "size": "tall"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfNS15OMp-7yvAm_aW6GnblzX7_XYU_A-AS2grQVfhzJXhbCouT1qzR2KwRQbiysfxwUBFxHK6upahWQAs8fqMqnnaoRR9YI1wfj3p05V9-gwNCwrL6NlHYP4nqAMKTK3977_DOg", "g": 1, "cat": "flat", "cap": "Bedroom"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWljtS1Zk8mm-klKg3qWNCOwLaxvOImV9gFmwNIU-pIRU7OP3vJArQ8yvBkpJaFT26rIsvtwTerDZuJc0RvgLWjrMa9w3dhjNr11JJGGFHe4HDPA8N7lJkuGlm5BAUjH6OzyCylE", "g": 1, "cat": "flat", "cap": "Second bedroom"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnENkmtl8u3fmnsrIENj0KS6qn0G9wRn-31A9LolvaaJYet9U1YQvVlBcQk5eOHvcWC3qmdvGK6nt2bS5HuBYBfAK73HsGGkYAWlQAutCTODlt9dksD3nXpySvgT1u_P4dJHBw", "g": 1, "cat": "flat", "cap": "Dining area", "size": "wide", "pos": "62% 60%", "tw": 1200, "th": 800}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs", "g": 1, "cat": "building", "cap": "Entrance", "size": "tall", "pos": "50% 50%", "tw": 1600, "th": 1067}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkTkbz1kmwswBEIpUS2odg2jpVeBZVoSsO4Zhgdz_Y-lUQJZTNIyQp77ulXBc4akkVpeDUu8UoQKXiLPGK-eftWwUZ_030zPZEV-urtW6nERYquVAp1SymzHlgGUGd6ZgM6IhAA", "g": 1, "cat": "flat", "cap": "Main door"}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmqO6YcIBUw-4Gucu1WxNNK1YwukGKVijrYqkwAHyvl3hR986rThUMImBveHIjV3XsRubnRzjNywuljLhx0tKX7AQV3By63v6kT_Wz02AlAjKxdRqMlhOQgUUiMG1bKpztE7XvU", "g": 1, "cat": "building", "cap": "Lift and staircase", "size": "wide", "pos": "40% 55%", "tw": 1200, "th": 800}, {"src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmskHYCTKAOB54nLmR3onzt6C67_eQTiPpkjSPgAcptHxNrD1qBM1usfqvrvCqNdq-2HD3KlTzxb8hPCCVi0qXsiHm5mdVVXHaUJHsJ0Ulwjs3rJPf13PNlahHvYXywxuFGE05z", "g": 1, "cat": "building", "cap": "Covered parking", "pos": "35% 60%"}];
 
-  function url(p, w, h){ return p.src + '=w' + w + '-h' + h + (p.g ? '-k-no-rj-l80' : '-no'); }
+  function url(p, w, h){
+    if (p.local) return (w > 900 || h > 900) ? p.src : (p.thumb || p.src);
+    return p.src + '=w' + w + '-h' + h + (p.g ? '-k-no-rj-l80' : '-no');
+  }
 
   /* Ripple */
   document.addEventListener('pointerdown', function(e){
@@ -1186,7 +1190,8 @@ document.documentElement.classList.add('js');
     b.setAttribute('aria-label', 'View photo: ' + p.cap);
     var tall = /\btall\b/.test(p.size || '');
     var tw = p.tw || (p.crop ? 700 : (tall ? 600 : 800)), th = p.th || (p.crop ? 1520 : (tall ? 900 : 600));
-    var img = '<img loading="lazy" decoding="async" alt="' + p.cap + '" src="' + url(p, tw, th) + '"' + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '>';
+    var srcset = (p.local && p.thumb) ? ' srcset="' + p.thumb + ' 800w, ' + p.src + ' ' + (p.w || 1440) + 'w" sizes="(min-width: 900px) 560px, 50vw"' : '';
+    var img = '<img loading="lazy" decoding="async" alt="' + p.cap + '" src="' + url(p, tw, th) + '"' + srcset + (p.pos ? ' style="object-position:' + p.pos + '"' : '') + '>';
     if(p.crop){ b.className += ' has-crop'; img = '<span class="gcrop">' + img + '</span>'; }
     b.innerHTML = img + '<span class="cap"><span>' + p.cap + '</span><span class="zoom" aria-hidden="true"><svg width="15" height="15"><use href="#i-expand"/></svg></span></span>';
     grid.appendChild(b);
