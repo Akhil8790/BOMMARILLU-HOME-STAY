@@ -113,6 +113,13 @@ def localize(stay, depth, base):
     return stay
 
 
+def other_hero(stay, depth):
+    """The hero image variants of another stay, relative to the page being built."""
+    h = stay['hero']
+    rel = lambda v: ('../' * depth + v) if v and v.startswith('assets/') else v
+    return {'portrait': rel(h.get('portrait')), 'src': rel(h['src']), 'frame': rel(h.get('frameSrc')), 'bg': rel(tiny_bg(h))}
+
+
 def context(key, data):
     stays, order = data['stays'], data['order']
     stay = localize(stays[key], stays[key]['path'].count('/'), data['base'])
@@ -127,6 +134,9 @@ def context(key, data):
                'wa': 'https://wa.me/%s?text=%s' % (c['wa'], quote(c['waMessage'], safe='')),
                'maps': stay['maps']},
         heroVars=hero_vars(stay['hero']),
+        heroBgClass=' top-fit' if stay['hero'].get('portraitFit') == 'top' else '',
+        fontBase='../' * stay['path'].count('/') + 'assets/fonts/',
+        otherHeroesJson=script_json([other_hero(stays[k], stay['path'].count('/')) for k in order if k != key]),
         heroPicture=hero_markup(stay['hero']),
         preload=preload_markup(stay['hero']),
         prefetch='\n'.join('<link rel="prefetch" href="%s">' % rel_link(stay['path'], stays[k]['path']) for k in order if k != key),

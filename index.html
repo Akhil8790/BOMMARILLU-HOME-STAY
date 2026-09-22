@@ -24,9 +24,9 @@
 <script type="speculationrules">
 {"prerender": [{"source": "list", "urls": ["3bhk/", "farm-villa/"], "eagerness": "moderate"}]}
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces-italic.woff2" crossorigin>
 <script>
 document.documentElement.classList.add('js');
 (function(){
@@ -110,6 +110,9 @@ document.documentElement.classList.add('js');
 }
 </script>
 <style>
+  @font-face{font-family:'Manrope';font-style:normal;font-weight:400 800;font-display:optional;src:url(assets/fonts/manrope.woff2) format('woff2');}
+  @font-face{font-family:'Fraunces';font-style:normal;font-weight:500 600;font-display:optional;src:url(assets/fonts/fraunces.woff2) format('woff2');}
+  @font-face{font-family:'Fraunces';font-style:italic;font-weight:500;font-display:optional;src:url(assets/fonts/fraunces-italic.woff2) format('woff2');}
   :root{
     --bg:#0A0A0B;
     --bg-2:#0E0E10;
@@ -451,6 +454,9 @@ document.documentElement.classList.add('js');
   @media (max-width:979px) and (orientation:portrait){
     .hero-bg .shot{aspect-ratio:var(--hero-pw) / var(--hero-ph);width:max(100cqw, calc(100cqh * var(--hero-pw) / var(--hero-ph)));}
     .hero-bg .shot img{object-position:var(--hero-ppos);}
+    .hero-bg.top-fit .shot{top:0;width:100cqw;transform:translate(-50%,0) scale(1.06);animation:heroZoomTop 16s var(--ease) forwards;
+      -webkit-mask-image:linear-gradient(#000 62%,transparent 100%);mask-image:linear-gradient(#000 62%,transparent 100%);}
+    @keyframes heroZoomTop{to{transform:translate(-50%,0) scale(1);}}
   }
   @keyframes heroZoom{to{transform:translate(-50%,-50%) scale(1);}}
   .hero-bg .shot{translate:0 var(--py, 0px);}
@@ -552,6 +558,8 @@ document.documentElement.classList.add('js');
   .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.42s}.d5{animation-delay:.54s}.d6{animation-delay:.66s}
   @keyframes rise{to{opacity:1;transform:none;}}
   .switched .rise{animation:none;opacity:1;transform:none;}
+  .switched .reveal{opacity:1 !important;transform:none !important;transition:none !important;}
+  .switched .grid .g{opacity:1 !important;transform:none !important;animation:none !important;}
 
   /* ---------- Quick action tiles ---------- */
   .quick{position:relative;z-index:2;padding:28px 0 8px;}
@@ -1073,7 +1081,7 @@ document.documentElement.classList.add('js');
       </div>
 
       <div class="map glass reveal r2">
-        <iframe src="https://www.google.com/maps?q=17.011994,81.7957109&amp;z=17&amp;output=embed" loading="lazy" title="Map showing Bommarillu Home Stay" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <iframe data-src="https://www.google.com/maps?q=17.011994,81.7957109&amp;z=17&amp;output=embed" loading="lazy" title="Map showing Bommarillu Home Stay" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         <a class="btn btn-sm" href="https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h" target="_blank" rel="noopener" style="background:linear-gradient(135deg,rgba(24,24,26,.86),rgba(18,18,20,.72))">
           <bm-icon name="route"></bm-icon>Open in Maps<svg class="ico-arrow" width="16" height="16"><use href="#i-arrow"/></svg>
         </a>
@@ -1353,14 +1361,14 @@ document.documentElement.classList.add('js');
     var hero = document.getElementById('top');
     var tx = 0, ty = 0, cx = 0, cy = 0, tiltRaf = 0;
     function tiltStep(){
-      cx += (tx - cx) * .12; cy += (ty - cy) * .12;
+      cx += (tx - cx) * .08; cy += (ty - cy) * .08;
       tilt.style.transform = 'rotateY(' + cx.toFixed(2) + 'deg) rotateX(' + cy.toFixed(2) + 'deg)';
       if(Math.abs(tx - cx) > .02 || Math.abs(ty - cy) > .02) tiltRaf = requestAnimationFrame(tiltStep); else tiltRaf = 0;
     }
     function tiltTo(x, y){ tx = x; ty = y; if(!tiltRaf) tiltRaf = requestAnimationFrame(tiltStep); }
     hero.addEventListener('pointermove', function(e){
       var r = hero.getBoundingClientRect();
-      tiltTo(((e.clientX - r.left) / r.width - .5) * 14, -((e.clientY - r.top) / r.height - .5) * 12);
+      tiltTo(((e.clientX - r.left) / r.width - .5) * 5, -((e.clientY - r.top) / r.height - .5) * 4);
     });
     hero.addEventListener('pointerleave', function(){ tiltTo(0, 0); });
   }
@@ -1385,7 +1393,7 @@ document.documentElement.classList.add('js');
   function revealNow(el){
     if(el.classList.contains('in')) return;
     el.classList.add('in');
-    var stat = el.querySelector('.stat b'); if(stat && !reduce) countUp(stat);
+    var stat = el.querySelector('.stat b'); if(stat && !reduce && !document.documentElement.classList.contains('switched')) countUp(stat);
   }
   if('IntersectionObserver' in window && !reduce){
     var io = new IntersectionObserver(function(entries){
@@ -1406,6 +1414,35 @@ document.documentElement.classList.add('js');
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  var OTHER_HEROES = [{"portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1080-h1920-fcrop64=1,50000000b000ffff-k-no-rj-l78", "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78", "frame": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78", "bg": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w64-h64-k-no-rj"}, {"portrait": "assets/farm-villa/night-portrait.jpg", "src": "assets/farm-villa/night.jpg", "frame": "assets/farm-villa/night.jpg", "bg": "assets/farm-villa/night-tiny.jpg"}];
+  function warmHeroes(){
+    var portrait = window.matchMedia('(max-width: 979px) and (orientation: portrait)').matches;
+    var desktop = window.matchMedia('(min-width: 980px)').matches;
+    OTHER_HEROES.forEach(function(h){
+      var pick = portrait && h.portrait ? h.portrait : (desktop ? [h.bg, h.frame] : h.src);
+      [].concat(pick).forEach(function(u){ if(u) new Image().src = u; });
+    });
+  }
+  if(!(navigator.connection && navigator.connection.saveData)){
+    window.addEventListener('load', function(){
+      if('requestIdleCallback' in window) requestIdleCallback(warmHeroes, {timeout: 2500}); else setTimeout(warmHeroes, 1500);
+    });
+  }
+
+  /* Map: load Google Maps only when the location section is close */
+  var mapFrame = document.querySelector('.map iframe[data-src]');
+  if(mapFrame){
+    var loadMap = function(){ mapFrame.src = mapFrame.dataset.src; mapFrame.removeAttribute('data-src'); };
+    if('IntersectionObserver' in window){
+      var mio = new IntersectionObserver(function(en){ if(en[0].isIntersecting){ loadMap(); mio.disconnect(); } }, {rootMargin:'500px 0px'});
+      mio.observe(mapFrame);
+      window.addEventListener('scroll', function onMapScroll(){
+        if(!mapFrame.dataset.src){ window.removeEventListener('scroll', onMapScroll); return; }
+        if(mapFrame.getBoundingClientRect().top < window.innerHeight + 500){ loadMap(); mio.disconnect(); window.removeEventListener('scroll', onMapScroll); }
+      }, {passive:true});
+    } else loadMap();
+  }
 })();
 </script>
 </body>

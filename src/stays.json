@@ -597,10 +597,10 @@
           806
         ],
         "pos": "50% 60%",
-        "portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1080-h1920-fcrop64=1,66660000b74bffff-k-no-rj-l78",
+        "portrait": "assets/farm-villa/night-portrait.jpg",
         "portraitBox": [
-          9,
-          16
+          645,
+          806
         ],
         "portraitPos": "50% 50%",
         "frameSrc": "assets/farm-villa/night.jpg",
@@ -610,7 +610,8 @@
         ],
         "framePos": "0% 50%",
         "chip1Top": "40%",
-        "bg": "assets/farm-villa/night-tiny.jpg"
+        "bg": "assets/farm-villa/night-tiny.jpg",
+        "portraitFit": "top"
       },
       "contact": {
         "tel": "+918919574232",
