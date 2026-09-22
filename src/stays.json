@@ -609,7 +609,8 @@
           5
         ],
         "framePos": "0% 50%",
-        "chip1Top": "40%"
+        "chip1Top": "40%",
+        "bg": "assets/farm-villa/night-tiny.jpg"
       },
       "contact": {
         "tel": "+918919574232",

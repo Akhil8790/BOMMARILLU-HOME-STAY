@@ -13,7 +13,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / 'src' / 'page.html'
 DATA = ROOT / 'src' / 'stays.json'
-SPEC_REVEAL = ['', ' r2', '', ' r2', ' r3', '']
+SPEC_REVEAL = ['']
 
 
 def esc(value):
@@ -43,12 +43,20 @@ def toggle_html(key, stays, order):
             '        <span class="st-pill" aria-hidden="true"></span>\n%s\n      </nav>') % '\n'.join(opts)
 
 
+def tiny_bg(hero):
+    """Desktop shows the hero photo blurred behind the text. A 64px copy stretched to full
+    width gives the same soft look with no blur filter, which was expensive to render."""
+    if hero.get('bg'):
+        return hero['bg']
+    return hero['src'].split('=')[0] + '=w64-h64-k-no-rj'
+
+
 def hero_markup(hero):
     img = '<img src="%s" alt="" width="%d" height="%d" fetchpriority="high" decoding="async">' % (esc(hero['src']), hero['w'], hero['h'])
-    if not hero.get('portrait'):
-        return img
-    return ('<picture><source media="(max-width: 979px) and (orientation: portrait)" srcset="%s">%s</picture>'
-            % (esc(hero['portrait']), img))
+    sources = ['<source media="(min-width: 980px)" srcset="%s">' % esc(tiny_bg(hero))]
+    if hero.get('portrait'):
+        sources.append('<source media="(max-width: 979px) and (orientation: portrait)" srcset="%s">' % esc(hero['portrait']))
+    return '<picture>%s%s</picture>' % (''.join(sources), img)
 
 
 def preload_markup(hero):
@@ -93,7 +101,7 @@ def localize(stay, depth, base):
     stay = json.loads(json.dumps(stay))
     rel = lambda v: ('../' * depth + v) if isinstance(v, str) and v.startswith('assets/') else v
     absu = lambda v: (base + v) if isinstance(v, str) and v.startswith('assets/') else v
-    for k in ('src', 'frameSrc', 'portrait'):
+    for k in ('src', 'frameSrc', 'portrait', 'bg'):
         if k in stay['hero']:
             stay['hero'][k] = rel(stay['hero'][k])
     for p in stay['photos']:
