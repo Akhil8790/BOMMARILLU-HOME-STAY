@@ -1,0 +1,772 @@
+{
+  "base": "https://akhil8790.github.io/BOMMARILLU-HOME-STAY/",
+  "order": [
+    "2bhk",
+    "3bhk",
+    "farmvilla"
+  ],
+  "stays": {
+    "2bhk": {
+      "path": "",
+      "label": "2 BHK",
+      "name": "Bommarillu Home Stay",
+      "short": "Bommarillu",
+      "seo": {
+        "title": "Bommarillu Home Stay — 2 BHK Flats in Rajamahendravaram",
+        "description": "Private 2 BHK flats in Prakasam Nagar, Rajamahendravaram. One flat per floor with 2 bedrooms, a hall, dining area, kitchen, balcony and bathrooms. Rated 4.5 on Google. Call or WhatsApp +91 88858 33778.",
+        "ogTitle": "Bommarillu Home Stay — 2 BHK Flats in Rajamahendravaram",
+        "ogDescription": "Private 2 BHK flats, one on every floor, in Prakasam Nagar, Rajamahendravaram. Rated 4.5 on Google. Call or WhatsApp to book.",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78"
+      },
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Bommarillu Home Stay",
+        "description": "Private 2 BHK flats in Prakasam Nagar, Rajamahendravaram, with one flat on each floor.",
+        "containsPlace": {
+          "@type": "Apartment",
+          "name": "2 BHK flat",
+          "numberOfBedrooms": 2,
+          "accommodationCategory": "2 BHK flat"
+        },
+        "telephone": "+91-8885833778",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Savera Bar Street, D.No:54-07-14/2, Anala Venkatappa Rao Rd, Sheela Nagar, Prakasam Nagar",
+          "addressLocality": "Rajamahendravaram",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "533103",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 17.011994,
+          "longitude": 81.7957109
+        },
+        "hasMap": "https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h"
+      },
+      "hero": {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
+        "w": 900,
+        "h": 1948,
+        "box": [
+          1170,
+          1804
+        ],
+        "pos": "50% 66.8%",
+        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
+        "frameBox": [
+          1170,
+          1804
+        ],
+        "framePos": "50% 66.8%"
+      },
+      "contact": {
+        "tel": "+918885833778",
+        "phone": "+91 88858 33778",
+        "phoneText": "+91 88858 33778",
+        "wa": "918885833778",
+        "waText": "+91 88858 33778",
+        "waMessage": "Hi, I'd like to book a 2 BHK flat at Bommarillu Home Stay"
+      },
+      "maps": "https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h",
+      "mapEmbed": "https://www.google.com/maps?q=17.011994,81.7957109&z=17&output=embed",
+      "address": "Savera Bar Street, D.No:54-07-14/2, Anala Venkatappa Rao Rd, Sheela Nagar, Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103",
+      "t": {
+        "sectionNav": "The flat",
+        "sectionIcon": "bed",
+        "chip": "4.5 · 56 Google reviews",
+        "chipAria": "Rated 4.5 out of 5 from 56 Google reviews",
+        "eyebrow": "2 BHK flats<span class=\"sm\"> · One per floor</span><span class=\"lg\"> · Rajamahendravaram</span>",
+        "h1": "Bommarillu <em>Home Stay</em>",
+        "lede": "Spacious, private 2 BHK flats in the heart of Rajamahendravaram, with just one flat on every floor. Run by people who'll treat you like family.",
+        "factsAria": "What each flat has",
+        "addrShort": "Prakasam Nagar, Rajamahendravaram",
+        "chip1": "4.5 on Google",
+        "chip1s": "56 reviews",
+        "chip2Icon": "floor",
+        "chip2": "2 BHK flats",
+        "chip2s": "One on every floor",
+        "tileWa": "Book a 2 BHK flat",
+        "welcome": "A private <em>2 BHK flat</em> on every floor, with the space and comfort of a real home in Prakasam Nagar.",
+        "kicker": "The flat",
+        "h2": "A complete 2 BHK home<br>on every floor",
+        "sectionLede": "Each floor has a single, self-contained 2 BHK flat, so you get the privacy of your own home and room for the whole family.",
+        "note": "Plus all the everyday spaces of a complete 2 BHK home.",
+        "galleryLede": "Real photos of the building, the 2 BHK flats and the common areas. Tap any photo to view it full size.",
+        "cardSub": "2 BHK flats · One per floor · 4.5 ★ on Google",
+        "mapTitle": "Map showing Bommarillu Home Stay",
+        "footNote": "Bommarillu Home Stay · 2 BHK flats · Prakasam Nagar, Rajamahendravaram, Andhra Pradesh 533103",
+        "stars": "★★★★★"
+      },
+      "facts": [
+        [
+          "bed",
+          "2 Bedrooms"
+        ],
+        [
+          "sofa",
+          "Hall"
+        ],
+        [
+          "kitchen",
+          "Kitchen"
+        ],
+        [
+          "balcony",
+          "Balcony"
+        ]
+      ],
+      "highlight": {
+        "stat": "1",
+        "statLabel": "per floor",
+        "title": "The whole floor is yours",
+        "text": "Only one flat on each floor means more privacy, more quiet and no neighbours sharing your landing."
+      },
+      "specs": [
+        [
+          "bed",
+          "2 Bedrooms",
+          "Two separate bedrooms for family or friends"
+        ],
+        [
+          "sofa",
+          "Hall / Living room",
+          "A shared space to relax together"
+        ],
+        [
+          "dine",
+          "Dining area",
+          "Sit down to meals together"
+        ],
+        [
+          "kitchen",
+          "Kitchen",
+          "Cook your own food, your way"
+        ],
+        [
+          "balcony",
+          "Balcony",
+          "Step outside for fresh air"
+        ],
+        [
+          "bath",
+          "Bathrooms",
+          "Inside your flat, just for your group"
+        ]
+      ],
+      "filters": [
+        [
+          "all",
+          "All"
+        ],
+        [
+          "building",
+          "Building"
+        ],
+        [
+          "flat",
+          "The flat"
+        ],
+        [
+          "common",
+          "Common areas"
+        ]
+      ],
+      "categories": {
+        "building": "Building",
+        "flat": "Inside the 2 BHK flat",
+        "common": "Common areas"
+      },
+      "photos": [
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ",
+          "g": 1,
+          "cat": "building",
+          "cap": "The building",
+          "size": "tall",
+          "crop": [
+            1170,
+            1804,
+            "50% 66.8%"
+          ]
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOQBCQZ230xpTnVsGB4EcDkb2M_TKcpb5k0bu9pK6K3LJdE6gOCD5oHNotQMbc9YJ_1tFUQdwVceQIrlR5kg88RtxpPwJM83bw7JZ7vVMrWfUOtT9tPmKDPoLsjaQ74NYS-1CXT",
+          "g": 0,
+          "cat": "common",
+          "cap": "Covered parking",
+          "size": "wide"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmMkdkMZjGSXW36U6st9_DHI2jAysGPQjkWg8JtTBQ6BmOsJ4JXdZO1dPXD4a6y4EjwgmH7IKcUnNtedN1A59GzMAz4p8DbntjMliI3FVstWrHqshNUgvMk8Pz-INACLpLPi2LJr",
+          "g": 0,
+          "cat": "flat",
+          "cap": "Bedroom"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmOFOROJE4DiIV1Jl8VpAI-bJ87wo9bK-npPW0h9MwpGkiam_Lz9OpnTGj1CP4UDiBsIvX8dWCmKT03YYgNT95jLMpa502q6AzEHIL9TrG47TO24RruIr5QHxUY3uDpfmL-jLfc",
+          "g": 1,
+          "cat": "building",
+          "cap": "Front of the building",
+          "size": "tall"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmN15HNnCUnNbaCt-9Dea1bnAPLdrhzb2zHmDPROmt_ycQWhzCMNvJq5s8cDRyxEEAY33KSdwAz0_A4scH4QCMAZR41W6VjYY_UmeGlt85eBWXZa6RYROmGYErKHR47ELeiEHqSP",
+          "g": 0,
+          "cat": "flat",
+          "cap": "Hall / living room",
+          "size": "wide"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOD00zSleczeF05rLpAMjQmo0k_wfHv0ds-mGNPgNbCJFdBMZQvL5LQwegDx8GybHdR3XU615oOp_EmKtACt_tZE3bppUE_U170-HWJcvnsohZAUg-MGgGdWMoJ4lE63pyfXVmW",
+          "g": 0,
+          "cat": "flat",
+          "cap": "Dining area"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnPY82S28Fo2_CTYWi8vroJPX5OlqjB9uhk4hmRBK7muKKYqhRDttvu-RcXZSrxqUWkm-QTip1T_wpmaS6VwNXyo1gK56EbM3qnorxWPqwtV-eZOYtGcrFNT6Su32uoseptiFEg",
+          "g": 1,
+          "cat": "building",
+          "cap": "Entrance and name board"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnSoOl68Pu3h-H96yFPQKF08R1y3YH9TPUw17Tb1iGPNS0P9gbDX7C7wisNMK7bs6IKGmFQmCqA-RN3OBTbZGqRxyUUZiQvH0FEJo9HI56MIlft8we7BJ04PWv2dKnPclz2AfHHIi4g_iKe",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Dining table",
+          "size": "tall"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkbBHWtZbDfFma0ARh1PB8-uZGm36MLmpsMytfY2P0cWon7rSOra8ph20xBjmwS3rNhbYEdKh4uBo-HH_sflfamVh__wNJ8y_lItjv5MUHYCjV-WTTRaWL-cVd-QIQilfq1P8g",
+          "g": 1,
+          "cat": "common",
+          "cap": "Ground floor entrance"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOxkTFk9gnCGUPwKtrIavGDGHiO5x7CjBqxpetbhYzsNhYd8dgd6rZM5gYyccwz5ykaLdYnhYa-Dm1ZSzmZoOWjytEtWcd6A1TF2IDZ8isOAEFKFcnIwcsk0xw6xlrH87J0wfWI",
+          "g": 0,
+          "cat": "common",
+          "cap": "Ground floor lobby"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl5G2OQ3akjwKx_NaNctvOIwRb_lVqB26bKMz6P8KlpJKMcjI_oceJI-F1FL26pYlaZ3TanRH7qXmLp3G49GM_iQ6OiO5wkSKt7MiZkYbAEf-wSnKiLAVjgrC9G-Xh1CKbs8OxG9A",
+          "g": 1,
+          "cat": "building",
+          "cap": "The neighbourhood at night",
+          "size": "wide"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOPcP2XjaRmXuE5TmTXjCg1F6DLHWAE7rK_Kjer96LuVAIeqalSQik8IcMga2iwgWOVo3XVdyRz3RAtVrYyvfB6GzozhQFr44Ez6-NU2H_oLQmNdfATwiaVJu9-z-oWjpFU_Osx",
+          "g": 0,
+          "cat": "flat",
+          "cap": "Dining corner"
+        }
+      ]
+    },
+    "3bhk": {
+      "path": "3bhk/",
+      "label": "3 BHK",
+      "name": "Bommarillu Vididillu",
+      "short": "Vididillu",
+      "seo": {
+        "title": "Bommarillu Vididillu — 3 BHK Flat in VL Puram, Rajamahendravaram",
+        "description": "A spacious 3 BHK flat in VL Puram, Venkateswara Nagar, Rajamahendravaram, with three bedrooms, a hall, dining area, modular kitchen, lift and covered parking. Rated 4.0 on Google. Call or WhatsApp +91 88858 33778.",
+        "ogTitle": "Bommarillu Vididillu — 3 BHK Flat in VL Puram, Rajamahendravaram",
+        "ogDescription": "A spacious 3 BHK flat with three bedrooms, a big hall and a modular kitchen in VL Puram, Rajamahendravaram. Call or WhatsApp to book.",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqSA3uyT77w02LQq1BsaHoI0UXeM5ju9kZw_NqPIpJdGiLNIgcqX2oxjYsLgCAutDi71-nFzZ5j9SAHODNHQIIqWHqMWJ9gSXbOpCwLRBEpUkK0asphNzorDdzXYLJVp_-sC5y=w1200-h800-k-no-rj-l80"
+      },
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Bommarillu Vididillu",
+        "description": "A 3 BHK flat in VL Puram, Venkateswara Nagar, Rajamahendravaram.",
+        "containsPlace": {
+          "@type": "Apartment",
+          "name": "3 BHK flat",
+          "numberOfBedrooms": 3,
+          "accommodationCategory": "3 BHK flat"
+        },
+        "telephone": "+91-8885833778",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqSA3uyT77w02LQq1BsaHoI0UXeM5ju9kZw_NqPIpJdGiLNIgcqX2oxjYsLgCAutDi71-nFzZ5j9SAHODNHQIIqWHqMWJ9gSXbOpCwLRBEpUkK0asphNzorDdzXYLJVp_-sC5y=w1200-h800-k-no-rj-l80",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "VL Puram, Venkateswara Nagar",
+          "addressLocality": "Rajamahendravaram",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "533103",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 17.0023292,
+          "longitude": 81.800668
+        },
+        "hasMap": "https://www.google.com/maps/place/Bommarillu-Vididillu/@17.0023292,81.800668,17z/data=!3m1!4b1!4m6!3m5!1s0x3a37a3002b4ab2f7:0xe2e3ddd43df3a5e6!8m2!3d17.0023292!4d81.800668!16s%2Fg%2F11wqpbgcxy"
+      },
+      "hero": {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78",
+        "w": 1800,
+        "h": 1200,
+        "box": [
+          3,
+          2
+        ],
+        "pos": "50% 50%",
+        "portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1080-h1920-fcrop64=1,50000000b000ffff-k-no-rj-l78",
+        "portraitBox": [
+          9,
+          16
+        ],
+        "portraitPos": "50% 50%",
+        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78",
+        "frameBox": [
+          4,
+          5
+        ],
+        "framePos": "50% 50%"
+      },
+      "contact": {
+        "tel": "+918885833778",
+        "phone": "+91 88858 33778",
+        "phoneText": "+91 88858 33778",
+        "wa": "918885833778",
+        "waText": "+91 88858 33778",
+        "waMessage": "Hi, I'd like to book the 3 BHK flat at Bommarillu Vididillu"
+      },
+      "maps": "https://www.google.com/maps/place/Bommarillu-Vididillu/@17.0023292,81.800668,17z/data=!3m1!4b1!4m6!3m5!1s0x3a37a3002b4ab2f7:0xe2e3ddd43df3a5e6!8m2!3d17.0023292!4d81.800668!16s%2Fg%2F11wqpbgcxy",
+      "mapEmbed": "https://www.google.com/maps?q=17.0023292,81.800668&z=17&output=embed",
+      "address": "VL Puram, Venkateswara Nagar, Rajamahendravaram, Andhra Pradesh 533103",
+      "t": {
+        "sectionNav": "The flat",
+        "sectionIcon": "bed",
+        "stars": "★★★★☆",
+        "chip": "4.0 · 23 Google reviews",
+        "chipAria": "Rated 4.0 out of 5 from 23 Google reviews",
+        "eyebrow": "3 BHK flat<span class=\"sm\"> · VL Puram</span><span class=\"lg\"> · VL Puram, Rajamahendravaram</span>",
+        "h1": "Bommarillu <em>Vididillu</em>",
+        "lede": "A spacious 3 BHK flat in VL Puram, Rajamahendravaram, with three bedrooms, a big hall, a dining area and a modular kitchen for family stays and groups.",
+        "factsAria": "What the flat has",
+        "addrShort": "VL Puram, Rajamahendravaram",
+        "chip1": "4.0 on Google",
+        "chip1s": "23 reviews",
+        "chip2Icon": "bed",
+        "chip2": "3 BHK flat",
+        "chip2s": "VL Puram, Rajamahendravaram",
+        "tileWa": "Book the 3 BHK flat",
+        "welcome": "Three bedrooms, a big hall and a kitchen: a <em>complete 3 BHK home</em> in VL Puram, Rajamahendravaram.",
+        "kicker": "The flat",
+        "h2": "A complete 3 BHK home<br>for families and groups",
+        "sectionLede": "Every room you need for a family visit, a group trip or a longer stay, in one self-contained 3 BHK flat.",
+        "note": "Plus all the everyday spaces of a complete 3 BHK home.",
+        "galleryLede": "Real photos of the 3 BHK flat, the entrance and the common areas. Tap any photo to view it full size.",
+        "cardSub": "3 BHK flat · 4.0 ★ on Google",
+        "mapTitle": "Map showing Bommarillu Vididillu",
+        "footNote": "Bommarillu Vididillu · 3 BHK flat · VL Puram, Venkateswara Nagar, Rajamahendravaram, Andhra Pradesh 533103"
+      },
+      "facts": [
+        [
+          "bed",
+          "3 Bedrooms"
+        ],
+        [
+          "sofa",
+          "Hall"
+        ],
+        [
+          "dine",
+          "Dining"
+        ],
+        [
+          "kitchen",
+          "Kitchen"
+        ]
+      ],
+      "highlight": {
+        "stat": "3",
+        "statLabel": "bedrooms",
+        "title": "Room for the whole family",
+        "text": "Three bedrooms, a big hall, a dining area and a kitchen: a complete home for families and groups."
+      },
+      "specs": [
+        [
+          "bed",
+          "3 Bedrooms",
+          "Three separate bedrooms for family or friends"
+        ],
+        [
+          "sofa",
+          "Hall / Living room",
+          "A big hall with an L-shaped sofa"
+        ],
+        [
+          "dine",
+          "Dining area",
+          "A dining nook for meals together"
+        ],
+        [
+          "kitchen",
+          "Modular kitchen",
+          "Plenty of storage and a fridge"
+        ],
+        [
+          "bath",
+          "Bathrooms",
+          "Inside your flat, just for your group"
+        ],
+        [
+          "lift",
+          "Lift & parking",
+          "Lift access and covered parking"
+        ]
+      ],
+      "filters": [
+        [
+          "all",
+          "All"
+        ],
+        [
+          "flat",
+          "The flat"
+        ],
+        [
+          "building",
+          "Building"
+        ]
+      ],
+      "categories": {
+        "flat": "Inside the 3 BHK flat",
+        "building": "Building"
+      },
+      "photos": [
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqSA3uyT77w02LQq1BsaHoI0UXeM5ju9kZw_NqPIpJdGiLNIgcqX2oxjYsLgCAutDi71-nFzZ5j9SAHODNHQIIqWHqMWJ9gSXbOpCwLRBEpUkK0asphNzorDdzXYLJVp_-sC5y",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Hall / living room",
+          "size": "wide tall",
+          "pos": "45% 55%",
+          "tw": 1600,
+          "th": 1067
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl8rylTXskWhqPUFZqkBuKsVyfcUL2bH8K4HDT2fTfcrOhu-cFaFRYXSMTVBA4xjvPXytfhb1A5Rl9hzuxbuk_cfJVLAHBPQBqoIbXwWijPbUPG_RqIDEPlp75OhIMjb9b5rp5Cdw",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Modular kitchen",
+          "size": "tall"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfNS15OMp-7yvAm_aW6GnblzX7_XYU_A-AS2grQVfhzJXhbCouT1qzR2KwRQbiysfxwUBFxHK6upahWQAs8fqMqnnaoRR9YI1wfj3p05V9-gwNCwrL6NlHYP4nqAMKTK3977_DOg",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Bedroom"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWljtS1Zk8mm-klKg3qWNCOwLaxvOImV9gFmwNIU-pIRU7OP3vJArQ8yvBkpJaFT26rIsvtwTerDZuJc0RvgLWjrMa9w3dhjNr11JJGGFHe4HDPA8N7lJkuGlm5BAUjH6OzyCylE",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Second bedroom"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnENkmtl8u3fmnsrIENj0KS6qn0G9wRn-31A9LolvaaJYet9U1YQvVlBcQk5eOHvcWC3qmdvGK6nt2bS5HuBYBfAK73HsGGkYAWlQAutCTODlt9dksD3nXpySvgT1u_P4dJHBw",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Dining area",
+          "size": "wide",
+          "pos": "62% 60%",
+          "tw": 1200,
+          "th": 800
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs",
+          "g": 1,
+          "cat": "building",
+          "cap": "Entrance",
+          "size": "tall",
+          "pos": "50% 50%",
+          "tw": 1600,
+          "th": 1067
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkTkbz1kmwswBEIpUS2odg2jpVeBZVoSsO4Zhgdz_Y-lUQJZTNIyQp77ulXBc4akkVpeDUu8UoQKXiLPGK-eftWwUZ_030zPZEV-urtW6nERYquVAp1SymzHlgGUGd6ZgM6IhAA",
+          "g": 1,
+          "cat": "flat",
+          "cap": "Main door"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmqO6YcIBUw-4Gucu1WxNNK1YwukGKVijrYqkwAHyvl3hR986rThUMImBveHIjV3XsRubnRzjNywuljLhx0tKX7AQV3By63v6kT_Wz02AlAjKxdRqMlhOQgUUiMG1bKpztE7XvU",
+          "g": 1,
+          "cat": "building",
+          "cap": "Lift and staircase",
+          "size": "wide",
+          "pos": "40% 55%",
+          "tw": 1200,
+          "th": 800
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmskHYCTKAOB54nLmR3onzt6C67_eQTiPpkjSPgAcptHxNrD1qBM1usfqvrvCqNdq-2HD3KlTzxb8hPCCVi0qXsiHm5mdVVXHaUJHsJ0Ulwjs3rJPf13PNlahHvYXywxuFGE05z",
+          "g": 1,
+          "cat": "building",
+          "cap": "Covered parking",
+          "pos": "35% 60%"
+        }
+      ]
+    },
+    "farmvilla": {
+      "path": "farm-villa/",
+      "label": "Farm Villa",
+      "name": "Farm Villa",
+      "short": "Farm Villa",
+      "seo": {
+        "title": "Farm Villa Rajahmundry — Pool, Home Theatre and Campfire in Bommuru",
+        "description": "A farm villa in Bommuru, Rajahmundry, 5 minutes from the highway, with a pool, home theatre, campfire, 24/7 CCTV and parking. Great for haldi, birthdays and get-togethers. Rated 4.9 on Google. Call +91 89195 74232.",
+        "ogTitle": "Farm Villa Rajahmundry — Pool, Home Theatre and Campfire in Bommuru",
+        "ogDescription": "A farm villa with a pool and home theatre in Bommuru, 5 minutes from the highway. Rated 4.9 on Google. Call or WhatsApp to book.",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1200-h675-k-no-rj-l80"
+      },
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "Farm Villa",
+        "description": "A farm villa in Bommuru, Rajahmundry, with a pool, home theatre and campfire, 5 minutes from the highway.",
+        "containsPlace": {
+          "@type": "House",
+          "name": "Farm villa",
+          "accommodationCategory": "Farm villa"
+        },
+        "telephone": "+91-8919574232",
+        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1200-h675-k-no-rj-l80",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Old Bommuru Road, GPR Layout, Kotta Bommuru",
+          "addressLocality": "Rajahmundry Rural",
+          "addressRegion": "Andhra Pradesh",
+          "postalCode": "533107",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 16.9756688,
+          "longitude": 81.810307
+        },
+        "hasMap": "https://www.google.com/maps/place/FarmVilla/data=!4m7!3m6!1s0x3a37a34ebb5d75b5:0x509fc68dc3087422!8m2!3d16.9756688!4d81.810307!16s%2Fg%2F11zjd1n67_!19sChIJtXVdu06jNzoRInQIw43Gn1A",
+        "openingHours": "Mo-Su 00:00-23:59",
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Swimming pool",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Home theatre",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Campfire",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "24/7 CCTV",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Parking",
+            "value": true
+          }
+        ]
+      },
+      "hero": {
+        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1600-h900-k-no-rj-l78",
+        "w": 1600,
+        "h": 900,
+        "box": [
+          16,
+          9
+        ],
+        "pos": "55% 50%",
+        "portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1080-h1920-fcrop64=1,66660000b74bffff-k-no-rj-l78",
+        "portraitBox": [
+          9,
+          16
+        ],
+        "portraitPos": "50% 50%",
+        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM=w1600-h900-k-no-rj-l78",
+        "frameBox": [
+          4,
+          5
+        ],
+        "framePos": "56% 50%"
+      },
+      "contact": {
+        "tel": "+918919574232",
+        "phone": "+91 89195 74232",
+        "phoneText": "+91 89195 74232 · +91 91939 99599",
+        "wa": "918919574232",
+        "waText": "+91 89195 74232",
+        "waMessage": "Hi, I'd like to book Farm Villa"
+      },
+      "maps": "https://www.google.com/maps/place/FarmVilla/data=!4m7!3m6!1s0x3a37a34ebb5d75b5:0x509fc68dc3087422!8m2!3d16.9756688!4d81.810307!16s%2Fg%2F11zjd1n67_!19sChIJtXVdu06jNzoRInQIw43Gn1A",
+      "mapEmbed": "https://www.google.com/maps?q=16.9756688,81.810307&z=16&output=embed",
+      "address": "Old Bommuru Road, GPR Layout, Kotta Bommuru, Rajahmundry Rural, Andhra Pradesh 533107",
+      "t": {
+        "sectionNav": "The villa",
+        "sectionIcon": "pool",
+        "chip": "4.9 · 14 Google reviews",
+        "chipAria": "Rated 4.9 out of 5 from 14 Google reviews",
+        "eyebrow": "Farm villa<span class=\"sm\"> · Bommuru</span><span class=\"lg\"> · Bommuru, Rajahmundry</span>",
+        "h1": "Farm <em>Villa</em>",
+        "lede": "A farm villa in Bommuru, just 5 minutes from the highway, with a pool, a home theatre and a peaceful green setting for family stays and celebrations.",
+        "factsAria": "What the villa has",
+        "addrShort": "Old Bommuru Road, Bommuru",
+        "chip1": "4.9 on Google",
+        "chip1s": "14 reviews",
+        "chip2Icon": "pool",
+        "chip2": "Farm villa with pool",
+        "chip2s": "5 min from the highway",
+        "tileWa": "Book the farm villa",
+        "welcome": "Greenery, a pool and space for everyone, just <em>5 minutes</em> from the highway in Bommuru.",
+        "kicker": "The villa",
+        "h2": "A farm villa<br>made for get-togethers",
+        "sectionLede": "Chill with friends, unwind with family or host your next celebration, surrounded by greenery and just 5 minutes from the highway.",
+        "note": "Best for haldi, mehendi, birthdays, anniversaries, get-togethers and pool parties.",
+        "galleryLede": "Real photos of the villa, the pool, the rooftop lawn and the rooms. Tap any photo to view it full size.",
+        "cardSub": "Farm villa · Open 24 hours · 4.9 ★ on Google",
+        "mapTitle": "Map showing Farm Villa",
+        "footNote": "Farm Villa · Old Bommuru Road, GPR Layout, Kotta Bommuru, Rajahmundry Rural, Andhra Pradesh 533107",
+        "stars": "★★★★★"
+      },
+      "facts": [
+        [
+          "pool",
+          "Pool"
+        ],
+        [
+          "theatre",
+          "Home theatre"
+        ],
+        [
+          "fire",
+          "Campfire"
+        ],
+        [
+          "shield",
+          "24/7 CCTV"
+        ]
+      ],
+      "highlight": {
+        "stat": "4.9",
+        "statLabel": "on Google",
+        "title": "Loved by guests",
+        "text": "Guests on Google call it spacious, beautiful and the best place to hang out with friends."
+      },
+      "specs": [
+        [
+          "bed",
+          "Bedrooms",
+          "Space to rest after the party"
+        ],
+        [
+          "theatre",
+          "Home theatre",
+          "Movie nights on the big screen"
+        ],
+        [
+          "pool",
+          "Swimming pool",
+          "Made for pool parties"
+        ],
+        [
+          "fire",
+          "Campfire",
+          "Evenings around the fire with family"
+        ],
+        [
+          "dine",
+          "Food delivery",
+          "Swiggy, Zomato and Blinkit deliver here"
+        ],
+        [
+          "shield",
+          "24/7 CCTV & parking",
+          "Round-the-clock security and spacious parking"
+        ]
+      ],
+      "filters": [
+        [
+          "all",
+          "All"
+        ],
+        [
+          "outdoors",
+          "Outdoors"
+        ],
+        [
+          "inside",
+          "Inside"
+        ]
+      ],
+      "categories": {
+        "outdoors": "Outdoors and pool",
+        "inside": "Inside the villa"
+      },
+      "photos": [
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM",
+          "g": 1,
+          "cat": "outdoors",
+          "cap": "The villa and pool from above",
+          "size": "wide tall",
+          "pos": "55% 55%",
+          "tw": 1600,
+          "th": 900
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnWJSxSVRE7XhKGTqHYZaPglSjQd6PpNOD1iHZZ-vPXcMdDWoeSHJR7sKkuvKXb7QpKbrvERtGAhzFqUGapScLYrRJ99YmdDvXoOcK0x2Oo8bwYCgrZ4uSKIO1qAEkJrZKMc-i9m9vEqxcY",
+          "g": 1,
+          "cat": "outdoors",
+          "cap": "Entrance and outdoor seating",
+          "size": "tall",
+          "pos": "8% 50%",
+          "tw": 1600,
+          "th": 900
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNq09cybq06c6fzqvcRtL1hnjk1KGZb7l7lECORjdV3gYJ38hlw8KKPJGLO-SnH4kwfe9tgPmzhkVb4ClNSzA4JcE4-xE6Hq8xxeZPI59CCMqhvzGortwE9UGpnLzLCViDKH20CRLxJ-mE",
+          "g": 1,
+          "cat": "inside",
+          "cap": "Spacious bedroom",
+          "size": "tall",
+          "pos": "34% 55%",
+          "tw": 1600,
+          "th": 900
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwooWV0gMhSgDmrQ1GidFA-iFajy239jxT4MKuZFThRJ0zlb1cPfl5z4snn0eQ3JL6785w4qP6m_lzZOqPEcFCRBUNcVu2DsA86qWgFAoh_P6gYVAB02CBQUwSSt2Nja50XdI42-CSRHdK",
+          "g": 1,
+          "cat": "inside",
+          "cap": "Bedroom",
+          "size": "wide",
+          "pos": "50% 60%",
+          "tw": 1200,
+          "th": 675
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlo6AQoCwcUsI8D32YlRe0P-OAVyGP9aXXuVAKSe4X8BzQefLu6ITca_OLO1vUuneFkFfrVkYTmeaDNZgSWQScAO_2CNT4FVJJChi_09dI1ABsB9PXMDqNdlGOjSqjI-kaDy5qQBzAtQqOg",
+          "g": 1,
+          "cat": "outdoors",
+          "cap": "Rooftop lawn",
+          "size": "wide",
+          "pos": "40% 62%",
+          "tw": 1200,
+          "th": 675
+        }
+      ]
+    }
+  }
+}
