@@ -55,6 +55,7 @@ document.documentElement.classList.add('js');
     theatre: '<svg viewBox="0 0 24 24" class="ai-spec ai-theatre"><rect class="f2" x="2.4" y="3.8" width="19.2" height="12.8" rx="2.4"/><path class="f play" d="M10.2 7.4v5.6l4.8-2.8z"/><path class="ln" d="M8 20.4h8M12 16.6v3.8"/></svg>',
     fire: '<svg viewBox="0 0 24 24" class="ai-spec ai-fire"><rect class="f2" x="3" y="17.4" width="18" height="2.6" rx="1.3" transform="rotate(-11 12 18.7)"/><rect class="f2" x="3" y="17.4" width="18" height="2.6" rx="1.3" transform="rotate(11 12 18.7)"/><g class="flame"><path class="fl" d="M12 2.8c.7 2.6 4.2 4.1 4.2 7.9a4.2 4.2 0 0 1-8.4 0c0-1.9 1.1-3.1 2-4-.1 1.5.5 2.5 1.5 2.8-.3-2.5.1-4.8.7-6.7z"/><path class="d2" d="M12 9.6c1 1.1 1.8 2 1.8 3.2a1.8 1.8 0 0 1-3.6 0c0-1.1.8-2 1.8-3.2z"/></g></svg>',
     lift: '<svg viewBox="0 0 24 24" class="ai-spec ai-lift"><rect class="f2" x="4" y="2.4" width="16" height="19.2" rx="2.6"/><path class="f up" d="M12 5.6l3.2 3.6H8.8z"/><path class="f dn" d="M12 18.4l-3.2-3.6h6.4z"/><path class="ln" d="M12 10.6v2.8"/></svg>',
+    speaker: '<svg viewBox="0 0 24 24" class="ai-spec ai-speaker"><rect class="f2" x="5.2" y="2.4" width="13.6" height="19.2" rx="3"/><circle class="f" cx="12" cy="14.2" r="4.3"/><circle class="d" cx="12" cy="14.2" r="1.5"/><circle class="d" cx="12" cy="6.4" r="1.6"/><path class="ln wave w1" d="M20.6 10.2a5 5 0 0 1 0 8"/><path class="ln wave w2" d="M3.4 10.2a5 5 0 0 0 0 8"/></svg>',
     shield: '<svg viewBox="0 0 24 24" class="ai-spec ai-shield"><path class="f" d="M12 2.4 4.4 5.3v5.9c0 4.7 3.2 8.8 7.6 10.4 4.4-1.6 7.6-5.7 7.6-10.4V5.3z"/><path class="ck" d="M8.4 12.2l2.5 2.5 4.8-5.1"/></svg>'
   };
   // A cross-page transition the browser decides to skip (e.g. tab in the background) is not an error.
@@ -322,6 +323,12 @@ document.documentElement.classList.add('js');
   .ai-lift .ln{stroke-width:1.3;opacity:.55;}
   @keyframes icLiftUp{0%,100%{transform:translateY(0);opacity:1}25%{transform:translateY(-1.6px);opacity:.55}50%{transform:translateY(0);opacity:1}}
   @keyframes icLiftDn{0%,50%,100%{transform:translateY(0);opacity:1}75%{transform:translateY(1.6px);opacity:.55}}
+  .ai-speaker .f{transform-box:fill-box;transform-origin:50% 50%;animation:icThump calc(.9s * var(--spd)) ease-in-out infinite;}
+  .ai-speaker .wave{stroke:var(--ic-line);opacity:0;animation:icWaveOut calc(1.8s * var(--spd)) ease-out infinite;}
+  .ai-speaker .w2{animation-delay:calc(.3s * var(--spd));}
+  @keyframes icThump{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+  @keyframes icWaveOut{0%{opacity:0;transform:scale(.8)}30%{opacity:.9}100%{opacity:0;transform:scale(1.25)}}
+  .ai-speaker .wave{transform-box:fill-box;transform-origin:50% 50%;}
   .ai-theatre .play{transform-box:fill-box;transform-origin:50% 50%;animation:icBeat calc(2s * var(--spd)) ease-in-out infinite;}
   .ai-fire .fl{fill:var(--ic-fill,var(--ic-coral));}
   .ai-fire .d2{fill:#FFE08A;}
@@ -1415,7 +1422,7 @@ document.documentElement.classList.add('js');
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  var OTHER_HEROES = [{"portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1080-h1920-fcrop64=1,50000000b000ffff-k-no-rj-l78", "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78", "frame": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w1800-h1200-k-no-rj-l78", "bg": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs=w64-h64-k-no-rj"}, {"portrait": "assets/farm-villa/night-portrait.jpg", "src": "assets/farm-villa/night.jpg", "frame": "assets/farm-villa/night.jpg", "bg": "assets/farm-villa/night-tiny.jpg"}];
+  var OTHER_HEROES = [{"portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82", "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlFSObkZLpML0uTzIBV9af-V3lvuO6awaY5jL_WgnkXDHNw1Nb0ITMYeWbAUaxf_yjLr9lvNU0fpICjhvwkb4MSJKsPgZsIpwwUrM-mg3DMLrCtJOxCGtIz7bDWA_73vs05zqVW=w1800-h1200-k-no-rj-l78", "frame": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82", "bg": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w64-h64-k-no-rj"}, {"portrait": "assets/farm-villa/night-portrait.jpg", "src": "assets/farm-villa/night.jpg", "frame": "assets/farm-villa/night.jpg", "bg": "assets/farm-villa/night-tiny.jpg"}];
   function warmHeroes(){
     var portrait = window.matchMedia('(max-width: 979px) and (orientation: portrait)').matches;
     var desktop = window.matchMedia('(min-width: 980px)').matches;
