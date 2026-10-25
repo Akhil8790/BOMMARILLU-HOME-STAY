@@ -140,11 +140,13 @@ def context(key, data):
         heroPicture=hero_markup(stay['hero']),
         preload=preload_markup(stay['hero']),
         prefetch='\n'.join('<link rel="prefetch" href="%s">' % rel_link(stay['path'], stays[k]['path']) for k in order if k != key),
-        # Browsers that support it render the other stay in the background on hover/touch, so the switch is instant.
+        # Supporting browsers render the other stays in the background right away, so a switch is instant
+        # (Chrome skips this on its own under Save-Data or battery saver).
         speculation='<script type="speculationrules">\n%s\n</script>' % script_json({'prerender': [{
             'source': 'list',
             'urls': [rel_link(stay['path'], stays[k]['path']) for k in order if k != key],
-            'eagerness': 'moderate'}]}),
+            'eagerness': 'eager'}]}),
+        stayPathsJson=script_json([stays[k]['path'] for k in order]),
         ld=script_json(ld, indent=2),
         toggle=toggle_html(key, stays, order),
         facts='\n'.join('        <li><bm-icon name="%s"></bm-icon>%s</li>' % (esc(i), esc(t)) for i, t in stay['facts']),

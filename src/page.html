@@ -58,14 +58,33 @@ document.documentElement.classList.add('js');
   window.addEventListener('unhandledrejection', function(e){
     if (e.reason && e.reason.name === 'AbortError' && /transition/i.test(e.reason.message || '')) e.preventDefault();
   });
+  // Stays sit in toggle order, so a switch can slide forward (to the right of the toggle) or back.
+  var STAY_PATHS = {{&stayPathsJson}};
+  function stayIndex(url){
+    var path = new URL(url, location.href).pathname, best = -1, len = -1;
+    STAY_PATHS.forEach(function(p, i){
+      if ((p === '' || path.slice(-p.length - 1) === '/' + p) && p.length > len) { best = i; len = p.length; }
+    });
+    return best;
+  }
+  function switchType(from, to){
+    if (!from || !to) return null;
+    var a = stayIndex(from), b = stayIndex(to);
+    return a < 0 || b < 0 || a === b ? null : (b > a ? 'forward' : 'back');
+  }
   ['pageswap', 'pagereveal'].forEach(function(type){
     window.addEventListener(type, function(e){
       var vt = e.viewTransition;
-      if (vt) {
-        [vt.ready, vt.finished, vt.updateCallbackDone].forEach(function(p){ if (p) p.catch(function(){}); });
-      }
+      if (!vt) return;
+      [vt.ready, vt.finished, vt.updateCallbackDone].forEach(function(p){ if (p) p.catch(function(){}); });
+      var act = type === 'pageswap' ? e.activation : (window.navigation && navigation.activation);
+      var dir = act && act.from && act.entry && switchType(act.from.url, act.entry.url);
+      if (type === 'pageswap' && act && act.entry) dir = switchType(location.href, act.entry.url);
+      if (dir && vt.types) vt.types.add(dir);
     });
   });
+  // Browsers without cross-page transitions get a short fade instead of a hard cut.
+  if (!('onpagereveal' in window)) document.documentElement.classList.add('no-vt');
   customElements.define('bm-icon', class extends HTMLElement {
     connectedCallback(){
       if (this.firstChild) return;
@@ -385,10 +404,38 @@ document.documentElement.classList.add('js');
   @media (min-width:900px){ .stay-toggle{margin:0 auto 0 8px;} .st-opt{min-width:66px;font-size:.84rem;} }
 
   /* Cross-page switch between stays */
+  /* The nav stays put, the pill glides to the new stay, the hero photo dissolves on its own layer,
+     and the page content slides a little in the direction of the switch. Only opacity and transform
+     are animated, so it all runs on the compositor. */
   @view-transition{navigation:auto;}
   .nav-bar{view-transition-name:site-nav;}
-  ::view-transition-old(root),::view-transition-new(root){animation-duration:.2s;animation-timing-function:cubic-bezier(.2,.8,.2,1);}
-  ::view-transition-group(stay-pill){animation-duration:.2s;animation-timing-function:cubic-bezier(.2,.8,.2,1);}
+  .hero-bg{view-transition-name:hero-media;}
+  .frame{view-transition-name:hero-frame;}
+  .st-opt:nth-of-type(1){view-transition-name:st-opt-1;}
+  .st-opt:nth-of-type(2){view-transition-name:st-opt-2;}
+  .st-opt:nth-of-type(3){view-transition-name:st-opt-3;}
+  ::view-transition-group(*){animation-duration:.5s;animation-timing-function:var(--ease);}
+  ::view-transition-group(stay-pill){animation-duration:.42s;animation-timing-function:cubic-bezier(.3,1.25,.4,1);}
+  ::view-transition-old(root){animation:vt-fade-out .22s cubic-bezier(.4,0,1,1) both;}
+  ::view-transition-new(root){animation:vt-fade-in .5s var(--ease) both;}
+  ::view-transition-old(hero-media),::view-transition-old(hero-frame){animation:vt-fade-out .5s var(--ease) both;}
+  ::view-transition-new(hero-media),::view-transition-new(hero-frame){animation:vt-media-in .7s var(--ease) both;}
+  ::view-transition-old(hero-frame),::view-transition-new(hero-frame){height:100%;object-fit:cover;overflow:hidden;border-radius:30px;}
+  html:active-view-transition-type(forward)::view-transition-old(root){animation-name:vt-out-left;}
+  html:active-view-transition-type(forward)::view-transition-new(root){animation-name:vt-in-right;}
+  html:active-view-transition-type(back)::view-transition-old(root){animation-name:vt-out-right;}
+  html:active-view-transition-type(back)::view-transition-new(root){animation-name:vt-in-left;}
+  @keyframes vt-fade-out{to{opacity:0;}}
+  @keyframes vt-fade-in{from{opacity:0;}}
+  @keyframes vt-media-in{from{opacity:0;transform:scale(1.04);}}
+  @keyframes vt-out-left{to{opacity:0;transform:translate3d(-28px,0,0);}}
+  @keyframes vt-out-right{to{opacity:0;transform:translate3d(28px,0,0);}}
+  @keyframes vt-in-right{from{opacity:0;transform:translate3d(40px,0,0);}}
+  @keyframes vt-in-left{from{opacity:0;transform:translate3d(-40px,0,0);}}
+
+  /* Fallback without view transitions: fade the page out on click and back in on arrival. */
+  html.no-vt.leaving body{opacity:0;transition:opacity .18s cubic-bezier(.4,0,1,1);}
+  html.no-vt.switched body{animation:vt-fade-in .45s var(--ease) both;}
 
   /* ---------- Drawer ---------- */
   .scrim{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.68);opacity:0;pointer-events:none;transition:opacity .25s var(--smooth);}
@@ -440,7 +487,7 @@ document.documentElement.classList.add('js');
     background:
       linear-gradient(180deg,rgba(10,10,11,.55) 0%,rgba(10,10,11,0) 22%,rgba(10,10,11,0) 38%,rgba(10,10,11,.8) 70%,var(--bg) 100%);
   }
-  .hero-grid{position:relative;display:grid;gap:32px;padding-top:110px;padding-bottom:calc(28px + var(--sb));}
+  .hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:32px;padding-top:110px;padding-bottom:calc(28px + var(--sb));}
   .hero-card{border-radius:var(--r-lg);padding:22px 20px 20px;}
   .chip{
     display:inline-flex;align-items:center;gap:8px;min-height:34px;padding:0 14px;border-radius:999px;
@@ -453,7 +500,7 @@ document.documentElement.classList.add('js');
   .eyebrow{margin:16px 0 6px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);}
   .hero h1{
     margin:0;font-family:var(--font-display);font-weight:600;
-    font-size:clamp(2.35rem, 10vw, 4.6rem);line-height:1;letter-spacing:-.015em;
+    font-size:clamp(2rem, 10.5vw, 4.6rem);line-height:1;letter-spacing:-.015em;
   }
   .hero h1 em{font-style:italic;font-weight:500;color:var(--brass);
     background:linear-gradient(110deg,var(--brass) 0%,var(--brass) 40%,#FFF1D6 50%,var(--brass) 60%,var(--brass) 100%);
@@ -1132,14 +1179,19 @@ document.documentElement.classList.add('js');
     stayToggle.classList.add('ready');
     requestAnimationFrame(function(){ stayToggle.classList.add('animate'); });
     stayToggle.querySelectorAll('.st-opt').forEach(function(a){
-      a.addEventListener('click', function(){
-        if(a === currentOpt) return;
+      a.addEventListener('click', function(e){
+        if(a === currentOpt || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+        try { sessionStorage.setItem('stay-switch', '1'); } catch (err) {}
+        // With view transitions the pill glides across as part of the page switch.
+        if(!document.documentElement.classList.contains('no-vt')) return;
+        e.preventDefault();
         placePill(a);
-        try { sessionStorage.setItem('stay-switch', '1'); } catch (e) {}
+        document.documentElement.classList.add('leaving');
+        setTimeout(function(){ location.href = a.href; }, reduce ? 0 : 180);
       });
     });
     window.addEventListener('resize', function(){ placePill(currentOpt); });
-    window.addEventListener('pageshow', function(){ placePill(currentOpt); });
+    window.addEventListener('pageshow', function(){ document.documentElement.classList.remove('leaving'); placePill(currentOpt); });
     if(document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ placePill(currentOpt); });
   }
 
