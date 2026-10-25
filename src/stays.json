@@ -16,7 +16,7 @@
         "description": "Private 2 BHK flats in Prakasam Nagar, Rajamahendravaram. One flat per floor with 2 bedrooms, a hall, dining area, kitchen, balcony and bathrooms. Rated 4.5 on Google. Call or WhatsApp +91 88858 33778.",
         "ogTitle": "Bommarillu Home Stay — 2 BHK Flats in Rajamahendravaram",
         "ogDescription": "Private 2 BHK flats, one on every floor, in Prakasam Nagar, Rajamahendravaram. Rated 4.5 on Google. Call or WhatsApp to book.",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78"
+        "image": "assets/2bhk/hero-og.jpg"
       },
       "ld": {
         "@context": "https://schema.org",
@@ -30,7 +30,7 @@
           "accommodationCategory": "2 BHK flat"
         },
         "telephone": "+91-8885833778",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
+        "image": "assets/2bhk/hero-og.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Savera Bar Street, D.No:54-07-14/2, Anala Venkatappa Rao Rd, Sheela Nagar, Prakasam Nagar",
@@ -47,20 +47,21 @@
         "hasMap": "https://www.google.com/maps/place/BOMMARILLU+HOME+STAY/@17.0119429,81.7932099,17z/data=!4m6!3m5!1s0x3a37a34ad8bc8c2d:0x29eae7fe3744b1fa!8m2!3d17.011994!4d81.7957109!16s%2Fg%2F11ltjmh80h"
       },
       "hero": {
-        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
-        "w": 900,
-        "h": 1948,
+        "src": "assets/2bhk/p1.jpg",
+        "w": 739,
+        "h": 944,
         "box": [
-          1170,
-          1804
+          739,
+          944
         ],
-        "pos": "50% 66.8%",
-        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ=w900-h1950-k-no-rj-l78",
+        "pos": "50% 50%",
+        "frameSrc": "assets/2bhk/p1.jpg",
         "frameBox": [
-          1170,
-          1804
+          739,
+          944
         ],
-        "framePos": "50% 66.8%"
+        "framePos": "50% 50%",
+        "bg": "assets/2bhk/hero-tiny.jpg"
       },
       "contact": {
         "tel": "+918885833778",
@@ -181,87 +182,82 @@
       },
       "photos": [
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmWMTjm8JNFPq2yLRM5wP0aErIjrdyj9WvWMn51VsjgWgwAxva9FJcBOc-uVYuF1A89dGTOjmok7-C4MGBkpp6xCLuRctvMToYjx3orNrPiF176BfdInpIORrs8v_44_fx4B666WQ",
-          "g": 1,
+          "src": "assets/2bhk/p1.jpg",
+          "thumb": "assets/2bhk/p1-800.jpg",
+          "local": true,
           "cat": "building",
           "cap": "The building",
           "size": "tall",
-          "crop": [
-            1170,
-            1804,
-            "50% 66.8%"
-          ]
+          "w": 739,
+          "pos": "50% 50%"
         },
         {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOQBCQZ230xpTnVsGB4EcDkb2M_TKcpb5k0bu9pK6K3LJdE6gOCD5oHNotQMbc9YJ_1tFUQdwVceQIrlR5kg88RtxpPwJM83bw7JZ7vVMrWfUOtT9tPmKDPoLsjaQ74NYS-1CXT",
-          "g": 0,
+          "src": "assets/2bhk/p5.jpg",
+          "thumb": "assets/2bhk/p5-800.jpg",
+          "local": true,
           "cat": "common",
           "cap": "Covered parking",
-          "size": "wide"
+          "size": "wide",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmMkdkMZjGSXW36U6st9_DHI2jAysGPQjkWg8JtTBQ6BmOsJ4JXdZO1dPXD4a6y4EjwgmH7IKcUnNtedN1A59GzMAz4p8DbntjMliI3FVstWrHqshNUgvMk8Pz-INACLpLPi2LJr",
-          "g": 0,
+          "src": "assets/2bhk/p4.jpg",
+          "thumb": "assets/2bhk/p4-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Bedroom"
+          "cap": "Bedroom",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmOFOROJE4DiIV1Jl8VpAI-bJ87wo9bK-npPW0h9MwpGkiam_Lz9OpnTGj1CP4UDiBsIvX8dWCmKT03YYgNT95jLMpa502q6AzEHIL9TrG47TO24RruIr5QHxUY3uDpfmL-jLfc",
-          "g": 1,
+          "src": "assets/2bhk/p6.jpg",
+          "thumb": "assets/2bhk/p6-800.jpg",
+          "local": true,
+          "cat": "flat",
+          "cap": "Bedroom with wardrobe",
+          "w": 1600
+        },
+        {
+          "src": "assets/2bhk/p10.jpg",
+          "thumb": "assets/2bhk/p10-800.jpg",
+          "local": true,
           "cat": "building",
-          "cap": "Front of the building",
-          "size": "tall"
+          "cap": "Gate and name board",
+          "size": "tall",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmN15HNnCUnNbaCt-9Dea1bnAPLdrhzb2zHmDPROmt_ycQWhzCMNvJq5s8cDRyxEEAY33KSdwAz0_A4scH4QCMAZR41W6VjYY_UmeGlt85eBWXZa6RYROmGYErKHR47ELeiEHqSP",
-          "g": 0,
+          "src": "assets/2bhk/p9.jpg",
+          "thumb": "assets/2bhk/p9-800.jpg",
+          "local": true,
           "cat": "flat",
           "cap": "Hall / living room",
-          "size": "wide"
+          "size": "wide",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOD00zSleczeF05rLpAMjQmo0k_wfHv0ds-mGNPgNbCJFdBMZQvL5LQwegDx8GybHdR3XU615oOp_EmKtACt_tZE3bppUE_U170-HWJcvnsohZAUg-MGgGdWMoJ4lE63pyfXVmW",
-          "g": 0,
+          "src": "assets/2bhk/p7.jpg",
+          "thumb": "assets/2bhk/p7-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Dining area"
+          "cap": "Dining area",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnPY82S28Fo2_CTYWi8vroJPX5OlqjB9uhk4hmRBK7muKKYqhRDttvu-RcXZSrxqUWkm-QTip1T_wpmaS6VwNXyo1gK56EbM3qnorxWPqwtV-eZOYtGcrFNT6Su32uoseptiFEg",
-          "g": 1,
+          "src": "assets/2bhk/p8.jpg",
+          "thumb": "assets/2bhk/p8-800.jpg",
+          "local": true,
           "cat": "building",
-          "cap": "Entrance and name board"
+          "cap": "Entrance and name board",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnSoOl68Pu3h-H96yFPQKF08R1y3YH9TPUw17Tb1iGPNS0P9gbDX7C7wisNMK7bs6IKGmFQmCqA-RN3OBTbZGqRxyUUZiQvH0FEJo9HI56MIlft8we7BJ04PWv2dKnPclz2AfHHIi4g_iKe",
-          "g": 1,
+          "src": "assets/2bhk/p3.jpg",
+          "thumb": "assets/2bhk/p3-800.jpg",
+          "local": true,
           "cat": "flat",
           "cap": "Dining table",
-          "size": "tall"
-        },
-        {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkbBHWtZbDfFma0ARh1PB8-uZGm36MLmpsMytfY2P0cWon7rSOra8ph20xBjmwS3rNhbYEdKh4uBo-HH_sflfamVh__wNJ8y_lItjv5MUHYCjV-WTTRaWL-cVd-QIQilfq1P8g",
-          "g": 1,
-          "cat": "common",
-          "cap": "Ground floor entrance"
-        },
-        {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOxkTFk9gnCGUPwKtrIavGDGHiO5x7CjBqxpetbhYzsNhYd8dgd6rZM5gYyccwz5ykaLdYnhYa-Dm1ZSzmZoOWjytEtWcd6A1TF2IDZ8isOAEFKFcnIwcsk0xw6xlrH87J0wfWI",
-          "g": 0,
-          "cat": "common",
-          "cap": "Ground floor lobby"
-        },
-        {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl5G2OQ3akjwKx_NaNctvOIwRb_lVqB26bKMz6P8KlpJKMcjI_oceJI-F1FL26pYlaZ3TanRH7qXmLp3G49GM_iQ6OiO5wkSKt7MiZkYbAEf-wSnKiLAVjgrC9G-Xh1CKbs8OxG9A",
-          "g": 1,
-          "cat": "building",
-          "cap": "The neighbourhood at night",
-          "size": "wide"
-        },
-        {
-          "src": "https://lh3.googleusercontent.com/grass-cs/ACvplmOPcP2XjaRmXuE5TmTXjCg1F6DLHWAE7rK_Kjer96LuVAIeqalSQik8IcMga2iwgWOVo3XVdyRz3RAtVrYyvfB6GzozhQFr44Ez6-NU2H_oLQmNdfATwiaVJu9-z-oWjpFU_Osx",
-          "g": 0,
-          "cat": "flat",
-          "cap": "Dining corner"
+          "size": "tall",
+          "w": 900
         }
       ]
     },
@@ -275,7 +271,7 @@
         "description": "A spacious 3 BHK flat in VL Puram, Venkateswara Nagar, Rajamahendravaram, with three bedrooms, a hall, dining area, modular kitchen, lift and covered parking. Rated 4.0 on Google. Call or WhatsApp +91 88858 33778.",
         "ogTitle": "Bommarillu Vididillu — 3 BHK Flat in VL Puram, Rajamahendravaram",
         "ogDescription": "A spacious 3 BHK flat with three bedrooms, a big hall and a modular kitchen in VL Puram, Rajamahendravaram. Call or WhatsApp to book.",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82"
+        "image": "assets/3bhk/hero-og.jpg"
       },
       "ld": {
         "@context": "https://schema.org",
@@ -289,7 +285,7 @@
           "accommodationCategory": "3 BHK flat"
         },
         "telephone": "+91-8885833778",
-        "image": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82",
+        "image": "assets/3bhk/hero-og.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "VL Puram, Venkateswara Nagar",
@@ -306,27 +302,27 @@
         "hasMap": "https://www.google.com/maps/place/Bommarillu-Vididillu/@17.0023292,81.800668,17z/data=!3m1!4b1!4m6!3m5!1s0x3a37a3002b4ab2f7:0xe2e3ddd43df3a5e6!8m2!3d17.0023292!4d81.800668!16s%2Fg%2F11wqpbgcxy"
       },
       "hero": {
-        "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlFSObkZLpML0uTzIBV9af-V3lvuO6awaY5jL_WgnkXDHNw1Nb0ITMYeWbAUaxf_yjLr9lvNU0fpICjhvwkb4MSJKsPgZsIpwwUrM-mg3DMLrCtJOxCGtIz7bDWA_73vs05zqVW=w1800-h1200-k-no-rj-l78",
-        "w": 1800,
-        "h": 1200,
+        "src": "assets/3bhk/p1.jpg",
+        "w": 1600,
+        "h": 1067,
         "box": [
           3,
           2
         ],
         "pos": "50% 50%",
-        "portrait": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82",
+        "portrait": "assets/3bhk/p3.jpg",
         "portraitBox": [
-          534,
-          1156
+          900,
+          1600
         ],
-        "portraitPos": "50% 40%",
-        "frameSrc": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w534-h1156-k-no-rj-l82",
+        "portraitPos": "50% 50%",
+        "frameSrc": "assets/3bhk/p3.jpg",
         "frameBox": [
-          534,
-          1156
+          900,
+          1600
         ],
         "framePos": "50% 50%",
-        "bg": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE=w64-h64-k-no-rj"
+        "bg": "assets/3bhk/hero-tiny.jpg"
       },
       "contact": {
         "tel": "+918885833778",
@@ -442,94 +438,94 @@
       },
       "photos": [
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_UTDRFt6EnXke4Qc6QoJXkf6_fiyVxAO-y24G9gda6jxS_jvcdFt2WMoWuoXVn0unU0Gcy3td4JYkMYCJyb_bOFmWoJ-sSjmh5H8KRFck7bx3UgJYmm3bNZHejO2qlOStFJEE",
-          "g": 1,
-          "cat": "building",
-          "cap": "The building",
-          "size": "tall",
-          "pos": "50% 40%",
-          "tw": 534,
-          "th": 1156
-        },
-        {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqSA3uyT77w02LQq1BsaHoI0UXeM5ju9kZw_NqPIpJdGiLNIgcqX2oxjYsLgCAutDi71-nFzZ5j9SAHODNHQIIqWHqMWJ9gSXbOpCwLRBEpUkK0asphNzorDdzXYLJVp_-sC5y",
-          "g": 1,
+          "src": "assets/3bhk/p5.jpg",
+          "thumb": "assets/3bhk/p5-800.jpg",
+          "local": true,
           "cat": "flat",
           "cap": "Hall / living room",
           "size": "wide tall",
           "pos": "45% 55%",
-          "tw": 1600,
-          "th": 1067
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl8rylTXskWhqPUFZqkBuKsVyfcUL2bH8K4HDT2fTfcrOhu-cFaFRYXSMTVBA4xjvPXytfhb1A5Rl9hzuxbuk_cfJVLAHBPQBqoIbXwWijPbUPG_RqIDEPlp75OhIMjb9b5rp5Cdw",
-          "g": 1,
+          "src": "assets/3bhk/p10.jpg",
+          "thumb": "assets/3bhk/p10-800.jpg",
+          "local": true,
           "cat": "flat",
           "cap": "Modular kitchen",
-          "size": "tall"
+          "size": "tall",
+          "w": 1067
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnfNS15OMp-7yvAm_aW6GnblzX7_XYU_A-AS2grQVfhzJXhbCouT1qzR2KwRQbiysfxwUBFxHK6upahWQAs8fqMqnnaoRR9YI1wfj3p05V9-gwNCwrL6NlHYP4nqAMKTK3977_DOg",
-          "g": 1,
+          "src": "assets/3bhk/p4.jpg",
+          "thumb": "assets/3bhk/p4-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Bedroom"
+          "cap": "Bedroom",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlFSObkZLpML0uTzIBV9af-V3lvuO6awaY5jL_WgnkXDHNw1Nb0ITMYeWbAUaxf_yjLr9lvNU0fpICjhvwkb4MSJKsPgZsIpwwUrM-mg3DMLrCtJOxCGtIz7bDWA_73vs05zqVW",
-          "g": 1,
+          "src": "assets/3bhk/p1.jpg",
+          "thumb": "assets/3bhk/p1-800.jpg",
+          "local": true,
           "cat": "building",
           "cap": "Entrance at dusk",
-          "size": "wide",
+          "size": "wide tall",
           "pos": "50% 45%",
-          "tw": 1200,
-          "th": 800
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWljtS1Zk8mm-klKg3qWNCOwLaxvOImV9gFmwNIU-pIRU7OP3vJArQ8yvBkpJaFT26rIsvtwTerDZuJc0RvgLWjrMa9w3dhjNr11JJGGFHe4HDPA8N7lJkuGlm5BAUjH6OzyCylE",
-          "g": 1,
+          "src": "assets/3bhk/p11.jpg",
+          "thumb": "assets/3bhk/p11-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Second bedroom"
+          "cap": "Second bedroom",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnENkmtl8u3fmnsrIENj0KS6qn0G9wRn-31A9LolvaaJYet9U1YQvVlBcQk5eOHvcWC3qmdvGK6nt2bS5HuBYBfAK73HsGGkYAWlQAutCTODlt9dksD3nXpySvgT1u_P4dJHBw",
-          "g": 1,
+          "src": "assets/3bhk/p3.jpg",
+          "thumb": "assets/3bhk/p3-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Dining area",
-          "size": "wide",
-          "pos": "62% 60%",
-          "tw": 1200,
-          "th": 800
+          "cap": "Living area",
+          "size": "tall",
+          "pos": "50% 50%",
+          "w": 900
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkTkbz1kmwswBEIpUS2odg2jpVeBZVoSsO4Zhgdz_Y-lUQJZTNIyQp77ulXBc4akkVpeDUu8UoQKXiLPGK-eftWwUZ_030zPZEV-urtW6nERYquVAp1SymzHlgGUGd6ZgM6IhAA",
-          "g": 1,
+          "src": "assets/3bhk/p7.jpg",
+          "thumb": "assets/3bhk/p7-800.jpg",
+          "local": true,
           "cat": "flat",
-          "cap": "Main door"
+          "cap": "Main door",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmqO6YcIBUw-4Gucu1WxNNK1YwukGKVijrYqkwAHyvl3hR986rThUMImBveHIjV3XsRubnRzjNywuljLhx0tKX7AQV3By63v6kT_Wz02AlAjKxdRqMlhOQgUUiMG1bKpztE7XvU",
-          "g": 1,
+          "src": "assets/3bhk/p8.jpg",
+          "thumb": "assets/3bhk/p8-800.jpg",
+          "local": true,
           "cat": "building",
           "cap": "Lift and staircase",
           "size": "wide",
           "pos": "40% 55%",
-          "tw": 1200,
-          "th": 800
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmskHYCTKAOB54nLmR3onzt6C67_eQTiPpkjSPgAcptHxNrD1qBM1usfqvrvCqNdq-2HD3KlTzxb8hPCCVi0qXsiHm5mdVVXHaUJHsJ0Ulwjs3rJPf13PNlahHvYXywxuFGE05z",
-          "g": 1,
+          "src": "assets/3bhk/p6.jpg",
+          "thumb": "assets/3bhk/p6-800.jpg",
+          "local": true,
           "cat": "building",
           "cap": "Covered parking",
-          "pos": "35% 60%"
+          "pos": "35% 60%",
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm_yYZAQLPxqh_qDO9SbQBAqfhg8xXC_A_qbEjBIK0x9FftNzAp6t6GBoG_1bUPDf5JG_QIpw4kC9hKVCNA_W3J1tp5veGFkdjE7O4gBJjOtXdWnf4vAzOyxqc4LhcdHy0CSRs",
-          "g": 1,
+          "src": "assets/3bhk/p9.jpg",
+          "thumb": "assets/3bhk/p9-800.jpg",
+          "local": true,
           "cat": "building",
-          "cap": "Entrance gate",
-          "tw": 900,
-          "th": 600
+          "cap": "Foyer and front door",
+          "w": 1600
         }
       ]
     },
@@ -756,24 +752,24 @@
           "w": 1107
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkybehLRuYdn_OYqrZHQWGA4r95Bzu4f2UJbKG9u3kYFSD0yPDpRcWF0vkPhM2YAdHe6zA2kvKWnctmcpENegohSkuHN1h_iRgqtM17jESQcXB6TonAUIq2Y9sBrCEpcEqEoXrkeoA8wYDM",
-          "g": 1,
+          "src": "assets/farm-villa/aerial-pool.jpg",
+          "thumb": "assets/farm-villa/aerial-pool-800.jpg",
+          "local": true,
           "cat": "outdoors",
           "cap": "The villa and pool from above",
           "size": "tall",
           "pos": "55% 55%",
-          "tw": 1600,
-          "th": 900
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnWJSxSVRE7XhKGTqHYZaPglSjQd6PpNOD1iHZZ-vPXcMdDWoeSHJR7sKkuvKXb7QpKbrvERtGAhzFqUGapScLYrRJ99YmdDvXoOcK0x2Oo8bwYCgrZ4uSKIO1qAEkJrZKMc-i9m9vEqxcY",
-          "g": 1,
+          "src": "assets/farm-villa/entrance.jpg",
+          "thumb": "assets/farm-villa/entrance-800.jpg",
+          "local": true,
           "cat": "outdoors",
           "cap": "Entrance and outdoor seating",
           "size": "tall",
           "pos": "8% 50%",
-          "tw": 1600,
-          "th": 900
+          "w": 1600
         },
         {
           "src": "assets/farm-villa/aerial-top.jpg",
@@ -796,32 +792,32 @@
           "w": 1440
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlNq09cybq06c6fzqvcRtL1hnjk1KGZb7l7lECORjdV3gYJ38hlw8KKPJGLO-SnH4kwfe9tgPmzhkVb4ClNSzA4JcE4-xE6Hq8xxeZPI59CCMqhvzGortwE9UGpnLzLCViDKH20CRLxJ-mE",
-          "g": 1,
+          "src": "assets/farm-villa/deluxe-bedroom.jpg",
+          "thumb": "assets/farm-villa/deluxe-bedroom-800.jpg",
+          "local": true,
           "cat": "inside",
           "cap": "Deluxe bedroom",
           "pos": "34% 55%",
-          "tw": 1600,
-          "th": 900
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwooWV0gMhSgDmrQ1GidFA-iFajy239jxT4MKuZFThRJ0zlb1cPfl5z4snn0eQ3JL6785w4qP6m_lzZOqPEcFCRBUNcVu2DsA86qWgFAoh_P6gYVAB02CBQUwSSt2Nja50XdI42-CSRHdK",
-          "g": 1,
+          "src": "assets/farm-villa/second-bedroom.jpg",
+          "thumb": "assets/farm-villa/second-bedroom-800.jpg",
+          "local": true,
           "cat": "inside",
           "cap": "Second bedroom",
           "pos": "50% 60%",
-          "tw": 1200,
-          "th": 675
+          "w": 1600
         },
         {
-          "src": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlo6AQoCwcUsI8D32YlRe0P-OAVyGP9aXXuVAKSe4X8BzQefLu6ITca_OLO1vUuneFkFfrVkYTmeaDNZgSWQScAO_2CNT4FVJJChi_09dI1ABsB9PXMDqNdlGOjSqjI-kaDy5qQBzAtQqOg",
-          "g": 1,
+          "src": "assets/farm-villa/rooftop-lawn.jpg",
+          "thumb": "assets/farm-villa/rooftop-lawn-800.jpg",
+          "local": true,
           "cat": "outdoors",
           "cap": "Rooftop lawn",
           "size": "wide",
           "pos": "40% 62%",
-          "tw": 1200,
-          "th": 675
+          "w": 1600
         }
       ]
     }
