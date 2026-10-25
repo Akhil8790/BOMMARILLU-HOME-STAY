@@ -49,16 +49,16 @@
       "hero": {
         "src": "assets/2bhk/p1.jpg",
         "w": 739,
-        "h": 944,
+        "h": 830,
         "box": [
           739,
-          944
+          830
         ],
         "pos": "50% 50%",
         "frameSrc": "assets/2bhk/p1.jpg",
         "frameBox": [
           739,
-          944
+          830
         ],
         "framePos": "50% 50%",
         "bg": "assets/2bhk/hero-tiny.jpg"
@@ -310,16 +310,16 @@
           2
         ],
         "pos": "50% 50%",
-        "portrait": "assets/3bhk/p3.jpg",
+        "portrait": "assets/3bhk/hero-portrait.jpg",
         "portraitBox": [
-          900,
-          1600
+          661,
+          1067
         ],
         "portraitPos": "50% 50%",
-        "frameSrc": "assets/3bhk/p3.jpg",
+        "frameSrc": "assets/3bhk/hero-portrait.jpg",
         "frameBox": [
-          900,
-          1600
+          661,
+          1067
         ],
         "framePos": "50% 50%",
         "bg": "assets/3bhk/hero-tiny.jpg"
@@ -481,16 +481,6 @@
           "cat": "flat",
           "cap": "Second bedroom",
           "w": 1600
-        },
-        {
-          "src": "assets/3bhk/p3.jpg",
-          "thumb": "assets/3bhk/p3-800.jpg",
-          "local": true,
-          "cat": "flat",
-          "cap": "Living area",
-          "size": "tall",
-          "pos": "50% 50%",
-          "w": 900
         },
         {
           "src": "assets/3bhk/p7.jpg",
